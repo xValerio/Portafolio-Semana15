@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semana 11 - Actividades</title>
+    <link rel="stylesheet" href="../css/index-estilo.css">
+    <link rel="stylesheet" href="../css/index-estilo.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/alphardex/aqua.css/dist/aqua.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Pacifico&family=Satisfy&display=swap" rel="stylesheet">        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+</head>
+<body>
+    <div id="bg-animation"></div>
+    <header>
+        <div class="contenedorCabecera">
+            <button type="button" class="menu-button" aria-controls="sidebar" aria-expanded="false">☰</button>
+            <div class="logo">
+                <img src="../img/logo.png" alt="Logo de la Universidad Peruana Los Andes">
+            </div>
+            <div class="titulo-container">
+                <h1 class="tituloPortafolio">Base de Datos</h1>
+                <h5 class="nombre" aria-hidden="true">Valerio M.Z.</h5>
+            </div>            
+            <div class="sobre-mi">
+                <nav>
+                    <ul>
+                        <li><a href="#sobre-mi">Sobre Mí</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
+                    </ul>
+                </nav>
+            </div>                        
+        </div>
+    </header>
+
+    <nav class="sidebar" id="sidebar">
+        <header class="contenedor-menu">
+            <h1>Menú</h1>
+            <button class="close-button" aria-controls="sidebar" aria-expanded="false">×</button>
+        </header>
+        <ul class="menu">
+            <li>
+                <a href="index.html">
+                    <i class="fa fa-home"></i> Inicio
+                </a>
+            </li>
+            <li>
+                <a class="toggle-submenu-btn" aria-expanded="false">
+                    <i class="fa fa-database"></i> Base de Datos II
+                </a>
+                <ul class="submenu">
+                    <li>
+                        <a class="toggle-submenu-btn" aria-expanded="false">
+                            Unidad I
+                        </a>
+                        <ul class="sub-submenu">
+                            <li><a href="Semana01-actividades.html">Semana 01</a></li>
+                            <li><a href="Semana02-actividades.html">Semana 02</a></li>
+                            <li><a href="Semana03-actividades.html">Semana 03</a></li>
+                            <li><a href="Semana04-actividades.html">Semana 04</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="toggle-submenu-btn" aria-expanded="false">
+                            Unidad II
+                        </a>
+                        <ul class="sub-submenu">
+                            <li><a href="Semana05-actividades.html">Semana 05</a></li>
+                            <li><a href="Semana06-actividades.html">Semana 06</a></li>
+                            <li><del><a href="Semana07-actividades.html">Semana 07</a></del></li>
+                            <li><a href="Semana08-actividades.html">Semana 08</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="toggle-submenu-btn" aria-expanded="false">
+                            Unidad III
+                        </a>
+                        <ul class="sub-submenu">
+                            <li><del><a href="Semana07-actividades.html">Semana 09</a></del></li>
+                            <li><a href="Semana10-actividades.html">Semana 10</a></li>
+                            <li><a href="Semana11-actividades.html">Semana 11</a></li>
+                            <li><a href="Semana12-actividades.html">Semana 12</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="toggle-submenu-btn" aria-expanded="false">
+                            Unidad IV
+                        </a>
+                        <ul class="sub-submenu">
+                            <li><del><a href="Semana07-actividades.html">Semana 13</a></del></li>
+                            <li><a href="Semana14-actividades.html">Semana 14</a></li>
+                            <li><del></del><a href="Semana07-actividades.html">Semana 15</a><del></del></li>
+                            <li><a href="Semana16-actividades.html">Semana 16</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a class="toggle-submenu-btn" aria-expanded="false">
+                    <i class="fa fa-cog"></i> Taller De Aplicaciones I
+                </a>
+                <ul class="submenu">
+                    <li>
+                        <a class="toggle-submenu-btn" aria-expanded="false">
+                            Unidad I
+                        </a>
+                        <ul class="sub-submenu">
+                            <del><li><a href="Semana07-actividades.html">Semana 01</a></li></del>
+                            <del><li><a href="Semana07-actividades.html">Semana 02</a></li></del>
+                            <del><li><a href="Semana07-actividades.html">Semana 03</a></li></del>
+                            <del><li><a href="Semana07-actividades.html">Semana 04</a></li></del>
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="toggle-submenu-btn" aria-expanded="false">
+                            Unidad II
+                        </a>
+                        <ul class="sub-submenu">
+                            <del><li><a href="Semana07-actividades.html">Semana 05</a></li></del>
+                            <del><li><a href="Semana07-actividades.html">Semana 06</a></li></del>
+                            <del><li><a href="Semana07-actividades.html">Semana 07</a></li></del>
+                            <del><li><a href="Semana07-actividades.html">Semana 08</a></li></del>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a class="toggle-submenu-btn" aria-expanded="false">
+                    <i class="fas fa-laptop"></i> Taller De Aplicaciones II
+                </a>
+                <ul class="submenu">
+                    <li>
+                        <a class="toggle-submenu-btn" aria-expanded="false">
+                            Unidad III
+                        </a>
+                        <ul class="sub-submenu">
+                            <del><li><a href="Semana07-actividades.html">Semana 09</a></li></del>
+                            <del><li><a href="Semana07-actividades.html">Semana 10</a></li></del>
+                            <del><li><a href="Semana07-actividades.html">Semana 11</a></li></del>
+                            <del><li><a href="Semana07-actividades.html">Semana 12</a></li></del>
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="toggle-submenu-btn" aria-expanded="false">
+                            Unidad IV
+                        </a>
+                        <ul class="sub-submenu">
+                            <del><li><a href="Semana07-actividades.html">Semana 13</a></li></del>
+                            <del><li><a href="Semana07-actividades.html">Semana 14</a></li></del>
+                            <del><li><a href="Semana07-actividades.html">Semana 15</a></li></del>
+                            <del><li><a href="Semana07-actividades.html">Semana 16</a></li></del>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="#Otros-Cursos">
+                    <i class="fas fa-window-restore"></i> Otros Cursos
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="contenedor-breadcrumb">
+        <ul class="breadcrumb">
+            <li class="breadcrumb-item"><a href="../index.html">Inicio</a></li>
+            <li class="breadcrumb-item"><a href="BD-Semana11.html">Semana 11</a></li>
+            <li class="breadcrumb-item"><a href="Semana11-actividades.html">Actividades</a></li>
+        </ul>
+    </div>
+
+    <main>
+        <div id="indice" class="fade-in">
+            <h3>Índice</h3>
+            <ul style="list-style-type: none; padding-left: 0; text-align: left; margin-left: 0;">
+                <li><a href="#introduccion">Introducción</a></li>
+                <li><a href="#leyes-y-normas">1. Ley N° 29733 - Ley de Protección de Datos Personales</a></li>
+                <li><a href="#reglamento-ley">2. Decreto Supremo N° 003-2013-JUS - Reglamento de la Ley N° 29733</a></li>
+                <li><a href="#ley-seguridad-informacion">3. Ley N° 30036 - Ley de Seguridad de la Información en el Sector
+                        Público</a></li>
+                <li><a href="#Ley-General-de-Transparencia">4. Ley N° 27334 - Ley General de Transparencia y Acceso a la
+                        Información Pública</a></li>
+                <li><a href="#ley-identificacion-biometrica">5. Ley N° 30227 - Ley que Regula la Identificación Biométrica
+                        de las Personas</a></li>
+            </ul>
+        </div>
+
+        <br>
+        <hr class="section-divider">
+        <!-- Sección de Introducción -->
+        <div id="introduccion" class="fade-in text-center">
+            <h2>Normas y Leyes Relacionadas con la Protección de Datos Personales en Perú</h2>
+            <p>En el marco dela protección de la privacidad y la seguridad de los datos personales, varias leyes y
+                normativas
+                han sido implementadas en Perú. Estas regulan el manejo de la información personal, tanto en el ámbito
+                público
+                como privado, asegurando el cumplimiento de los derechos fundamentales de los ciudadanos.</p>
+        </div>
+    
+        <br>
+        <hr class="section-divider">
+    
+        <!-- Sección de Leyes y Normas -->
+        <div id="leyes-y-normas" class="fade-in">
+            <h3>1. Ley N° 29733 - Ley de Protección de Datos Personales</h3>
+            <p>La <strong>Ley N° 29733</strong>, promulgada el <strong>3 de julio de 2011</strong>, tiene como objetivo principal proteger la <strong>privacidad</strong> de los ciudadanos, regulando el <strong>tratamiento de datos personales</strong>. Esta ley establece los principios y normas que deben seguir tanto las <strong>entidades públicas</strong> como <strong>privadas</strong> en la recolección, almacenamiento, tratamiento y difusión de datos personales.</p>
+            <p>La ley busca garantizar los derechos fundamentales de las personas en cuanto a su <strong>privacidad</strong>, <strong>autodeterminación informativa</strong> y seguridad de los datos. También establece los mecanismos para el ejercicio de los derechos ARCO (Acceso, Rectificación, Cancelación y Oposición) sobre los datos personales.</p>
+            
+            <h6>1.1. Objetivo y Ámbito de Aplicación</h6>
+            <p>La ley es aplicable a todas las <strong>entidades</strong> que tratan datos personales dentro del territorio peruano, con algunas excepciones en sectores como la <strong>seguridad pública</strong> o datos sensibles (salud, religión, orientación sexual, etc.).</p>
+            
+            <h6>1.2. Principios del Tratamiento de Datos Personales</h6>
+            <p>Los datos deben ser tratados con <strong>licitud</strong>, <strong>finalidad legítima</strong>, <strong>proporcionalidad</strong>, <strong>exactitud</strong>, <strong>confidencialidad</strong> y <strong>transparencia</strong>, garantizando siempre la protección de los datos.</p>
+        
+            <h6>1.3. Derechos de los Titulares de Datos</h6>
+            <p>Los titulares de los datos personales tienen derechos como el <strong>acceso</strong>, <strong>rectificación</strong>, <strong>cancelación</strong> y <strong>oposición</strong> sobre sus datos, los cuales deben ser respetados por las entidades que los procesan.</p>
+        
+            <h6>1.4. Consentimiento</h6>
+            <p>El <strong>tratamiento de datos personales</strong> requiere el <strong>consentimiento expreso, libre, informado e inequívoco</strong> del titular, y este puede ser revocado en cualquier momento.</p>
+        
+            <h6>1.5. Obligaciones de las Entidades</h6>
+            <p>Las <strong>entidades</strong> responsables del tratamiento deben adoptar <strong>medidas de seguridad</strong> y registrar sus bases de datos en la <strong>Autoridad Nacional de Protección de Datos Personales (ANPDP)</strong>.</p>
+        
+            <h6>1.6. Autoridad Nacional de Protección de Datos Personales (ANPDP)</h6>
+            <p>La ANPDP es la entidad encargada de supervisar, fiscalizar y sancionar el cumplimiento de la ley. Además, gestiona el registro de bases de datos personales y resuelve las reclamaciones de los titulares de los datos.</p>
+        
+            <h6>1.7. Sanciones</h6>
+            <p>Las entidades que incumplen la ley pueden recibir sanciones que van desde <strong>amonestaciones</strong> hasta <strong>multas económicas</strong>, dependiendo de la gravedad de la infracción.</p>
+        
+            <h6>1.8. Implementación y Desafíos</h6>
+            <p>A pesar de su robustez, la implementación de la ley enfrenta desafíos como la <strong>conciencia pública</strong> y los <strong>recursos limitados</strong> de la ANPDP para supervisar el tratamiento de datos a nivel nacional.</p>
+        
+            <h6>1.9. Relación con Normas Internacionales</h6>
+            <p>La ley está alineada con tratados internacionales sobre derechos humanos, como la <strong>Convención Americana sobre Derechos Humanos</strong> y el <strong>Reglamento General de Protección de Datos (GDPR)</strong> de la Unión Europea, lo que permite que Perú se mantenga a la vanguardia en la protección de datos personales.</p>
+        
+            <p>En resumen, la <strong>Ley N° 29733</strong> establece un marco legal para la protección de los datos personales en Perú, promoviendo el respeto a la <strong>privacidad</strong> y la seguridad de la información, tanto en el ámbito público como privado, con el objetivo de garantizar los derechos fundamentales de los ciudadanos.</p>
+        </div>        
+        
+        <br>
+        <hr class="section-divider">
+    
+        <div id="reglamento-ley" class="fade-in">
+            <h3>2. Decreto Supremo N° 003-2013-JUS - Reglamento de la Ley N° 29733</h3>
+            <p>El <strong>Decreto Supremo N° 003-2013-JUS</strong> regula el procedimiento para la implementación de la <strong>Ley N° 29733</strong>, estableciendo las disposiciones técnicas y los procedimientos detallados para garantizar la protección de los datos personales en Perú. Este reglamento, aprobado el <strong>21 de febrero de 2013</strong>, desarrolla los aspectos operativos necesarios para asegurar el cumplimiento de la ley y la protección de los derechos fundamentales de los titulares de los datos personales.</p>
+        
+            <h6>1. Objeto y Ámbito de Aplicación</h6>
+            <p>El reglamento tiene como objetivo regular la protección de los datos personales, con un enfoque en la seguridad, la transparencia y el respeto a los derechos de los titulares. Es aplicable a todas las <strong>entidades públicas y privadas</strong> que tratan datos personales y regula los procedimientos de inscripción de las bases de datos en el Registro de Bases de Datos de la <strong>Autoridad Nacional de Protección de Datos Personales (ANPDP)</strong>.</p>
+        
+            <h6>2. Principios del Tratamiento de Datos Personales</h6>
+            <p>El reglamento refuerza los principios establecidos en la ley, detallando su aplicación práctica:</p>
+            <ul>
+                <li><strong>Licitud y finalidad:</strong> El tratamiento debe basarse en el consentimiento del titular y tener una finalidad legítima.</li>
+                <li><strong>Proporcionalidad y calidad:</strong> Los datos recolectados deben ser adecuados y no excesivos para la finalidad.</li>
+                <li><strong>Seguridad y confidencialidad:</strong> Las entidades deben implementar medidas de seguridad para proteger la información personal.</li>
+            </ul>
+        
+            <h6>3. Derechos de los Titulares de Datos Personales</h6>
+            <p>El reglamento fortalece los derechos <strong>ARCO</strong> (Acceso, Rectificación, Cancelación y Oposición) de los titulares, detallando el procedimiento para ejercerlos:</p>
+            <ul>
+                <li><strong>Derecho de acceso:</strong> El titular tiene derecho a conocer qué datos se están tratando sobre él.</li>
+                <li><strong>Derecho de rectificación:</strong> El titular puede solicitar la corrección de datos incorrectos o incompletos.</li>
+                <li><strong>Derecho de cancelación:</strong> El titular puede pedir la eliminación de sus datos cuando ya no sean necesarios.</li>
+                <li><strong>Derecho de oposición:</strong> El titular puede oponerse al tratamiento de sus datos por razones legítimas.</li>
+            </ul>
+            <p>El reglamento establece un plazo máximo de <strong>30 días calendario</strong> para dar respuesta a estas solicitudes.</p>
+        
+            <h6>4. Registro de Bases de Datos Personales</h6>
+            <p>Las bases de datos que contengan datos personales deben ser inscritas en el Registro de Bases de Datos de la ANPDP. La inscripción debe incluir detalles como la finalidad del tratamiento, las categorías de datos procesados, el responsable del tratamiento y las medidas de seguridad implementadas.</p>
+        
+            <h6>5. Consentimiento</h6>
+            <p>El reglamento subraya que el consentimiento del titular debe ser <strong>expreso, libre, informado e inequívoco</strong>, y debe ser documentado de manera verificable. Además, el consentimiento de los menores de edad debe ser otorgado por sus tutores o representantes legales.</p>
+        
+            <h6>6. Seguridad de los Datos Personales</h6>
+            <p>Las entidades responsables del tratamiento de los datos personales deben adoptar medidas de seguridad técnicas, organizativas y legales para proteger los datos. Estas medidas incluyen cifrado, control de acceso, políticas internas y la firma de contratos de confidencialidad. En caso de incidentes de seguridad, las entidades deben notificar a la ANPDP y a los titulares afectados.</p>
+        
+            <h6>7. Transferencias Internacionales de Datos Personales</h6>
+            <p>Las transferencias de datos a otros países solo se permitirán cuando el país receptor tenga niveles adecuados de protección de datos o cuando el titular haya otorgado su consentimiento explícito. En caso de países sin un nivel adecuado de protección, se deben implementar garantías contractuales para proteger los datos.</p>
+        
+            <h6>8. Sanciones y Fiscalización</h6>
+            <p>La <strong>ANPDP</strong> tiene la facultad de supervisar el cumplimiento de la ley y el reglamento, así como de imponer sanciones en caso de infracciones. Las sanciones pueden incluir advertencias o multas económicas, dependiendo de la gravedad de la infracción. Las infracciones pueden incluir:</p>
+            <ul>
+                <li>Falta de inscripción de bases de datos.</li>
+                <li>Violación de los derechos de los titulares.</li>
+                <li>Tratamiento no autorizado de datos personales.</li>
+                <li>Falta de medidas de seguridad adecuadas.</li>
+            </ul>
+        
+            <h6>9. Procedimientos de Inscripción y Control</h6>
+            <p>El reglamento establece los procedimientos detallados para la inscripción de las bases de datos y los plazos para su actualización. La ANPDP también tiene la facultad de realizar auditorías para verificar el cumplimiento de las disposiciones legales y reglamentarias.</p>
+        
+            <h6>10. Otras Disposiciones Importantes</h6>
+            <p>El reglamento establece medidas adicionales para proteger los datos de los <strong>niños y adolescentes</strong>, exigiendo un nivel superior de protección. También otorga a la ANPDP la facultad de investigar, sancionar infracciones y establecer procedimientos claros para la presentación de reclamaciones por parte de los titulares.</p>
+        
+            <h6>Conclusión</h6>
+            <p>El <strong>Decreto Supremo N° 003-2013-JUS</strong> es esencial para la implementación de la <strong>Ley N° 29733</strong>, proporcionando directrices operativas para garantizar la protección de los datos personales en Perú. Establece un marco claro para el manejo de los datos personales y un sistema de supervisión para asegurar el cumplimiento de las normativas, alineándose con los estándares nacionales e internacionales de protección de la información.</p>
+        </div>        
+    
+        <br>
+        <hr class="section-divider">
+    
+        <div id="ley-seguridad-informacion" class="fade-in">
+            <h3>3. Ley N° 30036 - Ley de Seguridad de la Información en el Sector Público</h3>
+            <p>La <strong>Ley N° 30036</strong>, promulgada el <strong>3 de julio de 2013</strong>, establece las bases para la protección, seguridad y confidencialidad de la información manejada por las entidades del sector público en Perú. Su principal objetivo es regular la gestión de la seguridad de la información en el sector público, garantizando que la información, tanto en formato físico como digital, sea gestionada adecuadamente para evitar riesgos como el acceso no autorizado, pérdida de datos, alteración de la información y amenazas que comprometan la confidencialidad, integridad y disponibilidad de los datos.</p>
+        
+            <h6>Objetivo y Propósito</h6>
+            <p>El principal objetivo de la Ley N° 30036 es regular la gestión de la seguridad de la información en las entidades públicas del país, promoviendo la adopción de medidas de seguridad para garantizar la protección de los datos gestionados y cumplir con la <strong>Ley N° 29733</strong> (Ley de Protección de Datos Personales) en cuanto a la protección de los datos personales que gestionan las entidades públicas.</p>
+        
+            <h6>Principales Disposiciones de la Ley N° 30036</h6>
+            
+            <h6>1. Ámbito de Aplicación</h6>
+            <p>La ley se aplica a todas las entidades del <strong>sector público</strong> de Perú, incluyendo el gobierno central, regional y local, organismos autónomos y empresas del Estado que manejen información sensible y de interés público. Aunque la ley no se aplica directamente a las entidades privadas, algunas disposiciones pueden tener implicaciones indirectas cuando una entidad privada maneje información del sector público.</p>
+        
+            <h6>2. Seguridad de la Información</h6>
+            <p>Uno de los principios fundamentales de la Ley N° 30036 es la <strong>seguridad de la información</strong>, lo que implica la implementación de medidas técnicas, organizativas y administrativas para proteger la información pública frente a amenazas como el acceso no autorizado, la divulgación indebida, la alteración o destrucción. Las medidas deben garantizar:</p>
+            <ul>
+                <li><strong>Confidencialidad:</strong> Solo las personas autorizadas pueden acceder a la información sensible.</li>
+                <li><strong>Integridad:</strong> La información debe ser precisa, completa y no debe alterarse de manera no autorizada.</li>
+                <li><strong>Disponibilidad:</strong> La información debe estar disponible para los usuarios autorizados cuando se requiera.</li>
+            </ul>
+        
+            <h6>3. Plan de Seguridad de la Información</h6>
+            <p>Las entidades públicas deben elaborar, implementar y mantener un <strong>Plan de Seguridad de la Información</strong> que defina políticas y procedimientos necesarios para proteger la información. Este plan debe abordar:</p>
+            <ul>
+                <li><strong>Gestión de riesgos:</strong> Identificación de riesgos y medidas para mitigar esos riesgos.</li>
+                <li><strong>Controles de acceso:</strong> Definición de quién tiene acceso a qué información y bajo qué condiciones.</li>
+                <li><strong>Auditorías y monitoreo:</strong> Mecanismos para controlar, verificar y auditar el acceso y uso de la información.</li>
+                <li><strong>Gestión de incidentes de seguridad:</strong> Proceso para la detección, reporte, respuesta y recuperación ante incidentes de seguridad.</li>
+            </ul>
+        
+            <h6>4. Responsabilidad de los Titulares de la Información</h6>
+            <p>Cada entidad debe designar un responsable de la seguridad de la información dentro de su estructura organizativa. Este responsable debe asegurar que las políticas y medidas de seguridad sean implementadas adecuadamente y que el personal esté capacitado en el manejo seguro de la información.</p>
+        
+            <h6>5. Implementación de Controles de Seguridad</h6>
+            <p>El reglamento establece la necesidad de aplicar controles de seguridad sobre los sistemas informáticos, redes y plataformas digitales del sector público, tales como:</p>
+            <ul>
+                <li><strong>Autenticación y autorización:</strong> Verificación de la identidad de los usuarios y acceso solo a la información que les corresponde.</li>
+                <li><strong>Protección contra malware:</strong> Uso de software antivirus, firewalls, y otros mecanismos de protección.</li>
+                <li><strong>Cifrado de la información:</strong> Técnicas de cifrado para proteger los datos, especialmente en redes inseguras.</li>
+                <li><strong>Copias de seguridad (backups):</strong> Procedimientos para realizar copias de seguridad periódicas de la información crítica.</li>
+            </ul>
+        
+            <h6>6. Protección de Datos Personales</h6>
+            <p>La ley establece que las entidades del sector público deben cumplir con las disposiciones de la Ley N° 29733, garantizando que los datos personales sean tratados de manera segura, adecuada y conforme a los derechos de los ciudadanos.</p>
+        
+            <h6>7. Riesgos y Gestión de Incidentes de Seguridad</h6>
+            <p>Las entidades públicas deben implementar procedimientos claros para la gestión de incidentes de seguridad que afecten la información. Esto incluye:</p>
+            <ul>
+                <li><strong>Detección:</strong> Identificación temprana de incidentes de seguridad.</li>
+                <li><strong>Notificación:</strong> Reporte inmediato a las autoridades competentes.</li>
+                <li><strong>Recuperación:</strong> Procedimientos para recuperar la información afectada.</li>
+                <li><strong>Informe y seguimiento:</strong> Documentación y seguimiento de los incidentes para prevenir futuros eventos similares.</li>
+            </ul>
+        
+            <h6>8. Normas Técnicas y Estándares Internacionales</h6>
+            <p>Las entidades públicas deben adoptar normas técnicas nacionales e internacionales en seguridad de la información, como los marcos de referencia ISO/IEC 27001 e ISO/IEC 27002, que establecen requisitos y buenas prácticas para la gestión de la seguridad de la información.</p>
+        
+            <h6>9. Fiscalización y Supervisión</h6>
+            <p>La <strong>Superintendencia Nacional de Administración Pública (SNAP)</strong> es la entidad encargada de supervisar el cumplimiento de la Ley N° 30036. Tiene la facultad de verificar que las medidas de seguridad sean implementadas correctamente y puede imponer sanciones en caso de incumplimiento.</p>
+        
+            <h6>10. Sanciones</h6>
+            <p>Las entidades que no implementen adecuadamente las medidas de seguridad pueden enfrentar sanciones, que incluyen multas, suspensión de actividades o acciones correctivas para remediar fallos en la seguridad.</p>
+        
+            <h6>Conclusión</h6>
+            <p>La <strong>Ley N° 30036</strong> establece un marco normativo para la gestión de la seguridad de la información en el sector público, protegiendo los datos e información crítica. La implementación adecuada de esta ley ayuda a prevenir riesgos relacionados con la ciberseguridad, fortalecer la confianza pública en la administración electrónica y garantizar la protección de los datos personales gestionados por el sector público.</p>
+        </div>        
+    
+        <br>
+        <hr class="section-divider">
+    
+        <div id="Ley General-de-Transparencia" class="fade-in">
+            <h3>4. Ley N° 27334 - Ley General de Transparencia y Acceso a la Información Pública</h3>
+            <p>Promulgada el <strong>29 de mayo de 2003</strong>, esta ley establece las bases para el acceso a la información pública y la transparencia en el sector público en Perú. A la vez, regula cómo las entidades públicas deben manejar y proteger los datos personales de los ciudadanos al proporcionar acceso a la información.</p>
+        
+            <h6>Objetivo y Propósito</h6>
+            <p>El principal propósito de la Ley N° 27334 es asegurar que toda la información en poder de las entidades del sector público sea accesible a los ciudadanos, promoviendo la transparencia en la gestión pública y fortaleciendo la confianza en las instituciones del Estado. La ley establece mecanismos y procedimientos para que los ciudadanos puedan acceder a la información pública, con ciertas excepciones para proteger la seguridad, defensa y datos personales.</p>
+        
+            <h6>Principales Disposiciones de la Ley N° 27334</h6>
+        
+            <h6>1. Derecho de Acceso a la Información Pública</h6>
+            <p>El artículo 2 establece que el derecho de acceso a la información pública es un derecho fundamental de los ciudadanos, garantizado por la Constitución de Perú. Este derecho aplica a todos los niveles de gobierno (nacional, regional y local), permitiendo que cualquier persona pueda solicitar información sin necesidad de acreditar un interés específico.</p>
+        
+            <h6>2. Excepciones al Derecho de Acceso</h6>
+            <p>La ley reconoce excepciones al derecho de acceso para proteger ciertos intereses legítimos, tales como:</p>
+            <ul>
+                <li><strong>Secretos de Estado:</strong> Información relacionada con la seguridad nacional o defensa del país.</li>
+                <li><strong>Protección de la privacidad:</strong> Datos personales sensibles que puedan afectar la privacidad de las personas.</li>
+                <li><strong>Información confidencial:</strong> Datos clasificados por la legislación vigente o que hayan sido clasificados como tal por autoridades competentes.</li>
+            </ul>
+        
+            <h6>3. Obligación de Publicidad Activa</h6>
+            <p>Las entidades públicas están obligadas a publicar de manera proactiva información relevante sobre su gestión y funcionamiento. Esto incluye, entre otras cosas:</p>
+            <ul>
+                <li>Estructura organizativa de la entidad pública.</li>
+                <li>Normas y políticas adoptadas por la entidad.</li>
+                <li>Contratos, presupuestos y gastos de las entidades.</li>
+                <li>Información sobre los funcionarios públicos: designaciones, cargos, remuneraciones, etc.</li>
+                <li>Estudios y documentos técnicos realizados por la entidad.</li>
+            </ul>
+        
+            <h6>4. Procedimiento para Solicitar Información</h6>
+            <p>El procedimiento para solicitar información pública debe ser simple, transparente y ágil. Las personas pueden hacer la solicitud por escrito, y las entidades públicas tienen la obligación de:</p>
+            <ul>
+                <li>Responder en un plazo máximo de 7 días hábiles.</li>
+                <li>Entregar la información solicitada, siempre que esté disponible y en formatos accesibles, preferiblemente electrónicos.</li>
+                <li>Justificar cualquier negativa, indicando la razón específica y la base legal de la excepción.</li>
+            </ul>
+        
+            <h6>5. Plazo de Respuesta y Silencio Administrativo</h6>
+            <p>La ley establece que las entidades deben responder en un plazo máximo de 7 días hábiles. Si no hay respuesta dentro de ese plazo, se considera que la solicitud ha sido tácitamente aceptada, lo que se conoce como <strong>silencio administrativo positivo</strong>.</p>
+        
+            <h6>6. Comisión de Acceso a la Información Pública</h6>
+            <p>Se crea una <strong>Comisión de Acceso a la Información Pública</strong> con la función de garantizar el cumplimiento de la ley. Esta comisión resuelve los recursos de los ciudadanos que no estén conformes con las respuestas a sus solicitudes. También tiene la capacidad de ordenar la entrega de información si una entidad pública incumple con la ley.</p>
+        
+            <h6>7. Sanciones por Incumplimiento</h6>
+            <p>La ley establece sanciones administrativas para las entidades públicas que no cumplan con las disposiciones sobre acceso a la información. Las sanciones incluyen multas y responsabilidad administrativa para los funcionarios que no cumplan con la ley.</p>
+        
+            <h6>8. Derecho de Impugnación</h6>
+            <p>Si un ciudadano no está conforme con la respuesta recibida, puede presentar un recurso de revisión ante la Comisión de Acceso a la Información Pública. La comisión revisará la decisión y, si considera que la entidad debe proporcionar la información, emitirá una resolución vinculante.</p>
+        
+            <h6>9. Protección de Datos Personales</h6>
+            <p>La ley también reconoce la importancia de proteger los datos personales. Si una solicitud involucra información personal, las entidades deben aplicar las disposiciones de la <strong>Ley N° 29733</strong> (Ley de Protección de Datos Personales) para proteger los derechos de privacidad de las personas.</p>
+        
+            <h6>10. Responsabilidades de las Entidades Públicas</h6>
+            <p>Cada entidad pública es responsable de crear y mantener sistemas de gestión de la información que faciliten el acceso transparente a la información. Además, deben designar un oficial de transparencia y acceso a la información, encargado de recibir, procesar y responder las solicitudes de información.</p>
+        
+            <h6>Impacto y Relevancia</h6>
+            <p>La Ley N° 27334 ha tenido un impacto significativo en la democracia en Perú, al fortalecer la rendición de cuentas y la prevención de la corrupción. La ley contribuye a una cultura de apertura gubernamental en la que los ciudadanos pueden participar activamente en la toma de decisiones y contribuir al debate público.</p>
+        
+            <h6>Conclusión</h6>
+            <p>La Ley N° 27334 representa un paso importante hacia la transparencia en la administración pública de Perú. Al garantizar el acceso a la información pública, la ley permite que los ciudadanos supervisen el uso de los recursos públicos, exijan responsabilidad a las autoridades y contribuyan a la construcción de una gestión pública más abierta y eficiente.</p>
+        </div>        
+    
+        <br>
+        <hr class="section-divider">
+    
+        <div id="ley-identificacion-biometrica" class="fade-in">
+            <h3>5. Ley N° 30227 - Ley que Regula la Identificación Biométrica de las Personas</h3>
+            <p>Aprobada el <strong>17 de junio de 2014</strong>, esta ley regula el uso de tecnologías biométricas (como huellas dactilares, reconocimiento facial, entre otros) para la identificación de personas en trámites oficiales. La ley también establece normas para la protección de datos personales en estos procesos, garantizando la seguridad, privacidad y protección de la información personal.</p>
+        
+            <h6>Objetivos de la Ley N° 30227</h6>
+            <p>La Ley N° 30227 tiene varios objetivos clave, entre los que destacan:</p>
+            <ul>
+                <li><strong>Regular el uso de tecnologías biométricas:</strong> La ley establece un marco jurídico para el uso de sistemas biométricos en la identificación de personas, mejorando la precisión y seguridad.</li>
+                <li><strong>Garantizar la protección de la privacidad:</strong> Asegura que la recopilación y el tratamiento de datos biométricos respete los derechos constitucionales, en particular el derecho a la privacidad.</li>
+                <li><strong>Optimizar la identificación en servicios públicos y privados:</strong> Facilita la identificación en procesos administrativos, control migratorio, votación y servicios financieros, entre otros.</li>
+                <li><strong>Establecer un marco de confianza:</strong> Regula el uso, almacenamiento y compartición de los datos biométricos, asegurando que se usen solo para fines establecidos por la ley.</li>
+            </ul>
+        
+            <h6>Principales Disposiciones de la Ley N° 30227</h6>
+        
+            <h6>1. Definición de Datos Biométricos</h6>
+            <p>El artículo 2 de la ley define los datos biométricos como aquellos datos personales obtenidos a partir de características biológicas, fisiológicas o conductuales de una persona, como huella dactilar, iris, rostro, voz, entre otros.</p>
+        
+            <h6>2. Ámbito de Aplicación</h6>
+            <p>La ley regula la identificación biométrica tanto en el ámbito público como privado. Entre las áreas de aplicación se incluyen:</p>
+            <ul>
+                <li>Registro de votantes en procesos electorales.</li>
+                <li>Trámites administrativos en entidades públicas.</li>
+                <li>Control migratorio en puntos de entrada y salida del país.</li>
+                <li>Servicios financieros que requieren autenticación de la identidad.</li>
+                <li>Acceso a instalaciones o servicios privados que requieran control de identidad.</li>
+            </ul>
+        
+            <h6>3. Responsabilidad de las Entidades</h6>
+            <p>Las entidades públicas y privadas que implementen sistemas de identificación biométrica deben garantizar la seguridad y protección de los datos personales. Esto incluye adoptar medidas para evitar el acceso no autorizado y el uso indebido de la información.</p>
+        
+            <h6>4. Consentimiento Informado</h6>
+            <p>El uso de datos biométricos debe basarse en el consentimiento previo, expreso e informado de la persona. Las entidades deben proporcionar información clara sobre el propósito de la recolección y tratamiento de los datos biométricos.</p>
+        
+            <h6>5. Protección de la Privacidad</h6>
+            <p>El uso de los datos biométricos debe ajustarse a las normas de protección de datos personales, especialmente la <strong>Ley N° 29733</strong> (Ley de Protección de Datos Personales). Los datos deben ser recolectados y utilizados de manera legal, justa y transparente.</p>
+        
+            <h6>6. Bases de Datos Biométricas</h6>
+            <p>Los sistemas biométricos deben ser gestionados por una entidad encargada de supervisar el uso de las bases de datos, asegurando que el acceso esté restringido a personas autorizadas y que los datos sean manejados de forma segura.</p>
+        
+            <h6>7. Acceso y Actualización de Datos</h6>
+            <p>Los ciudadanos tienen derecho a acceder y actualizar sus datos biométricos, en línea con las normativas de protección de datos. Los datos deben ser eliminados cuando ya no sean necesarios para el propósito original.</p>
+        
+            <h6>8. Interoperabilidad y Uso Compartido de Datos</h6>
+            <p>La ley regula la interoperabilidad entre sistemas biométricos de diferentes entidades, garantizando que el acceso a los datos sea seguro y que no se hagan usos indebidos de la información biométrica.</p>
+        
+            <h6>9. Sanciones por Incumplimiento</h6>
+            <p>Establece un régimen de sanciones administrativas para las entidades que no cumplan con las disposiciones de la ley, especialmente en lo que respecta a la protección de datos personales y el uso indebido de la información biométrica.</p>
+        
+            <h6>Regulación Adicional: Decreto Supremo N° 011-2015-JUS</h6>
+            <p>El Decreto Supremo N° 011-2015-JUS es el reglamento que desarrolla la Ley N° 30227, detallando las condiciones técnicas, operativas y de seguridad para los sistemas de identificación biométrica. Regula también el uso compartido de datos biométricos entre entidades públicas y privadas.</p>
+        
+            <h6>Impacto de la Ley N° 30227</h6>
+            <p>La implementación de esta ley tiene varios impactos clave:</p>
+            <ul>
+                <li><strong>Mejora en la seguridad y prevención de fraudes:</strong> Permite una identificación más precisa y segura, ayudando a prevenir el fraude de identidad y mejorar los procesos administrativos.</li>
+                <li><strong>Mayor eficiencia en los servicios públicos:</strong> Agiliza trámites y procesos administrativos, permitiendo un acceso más rápido y seguro a servicios como el voto o el registro de ciudadanos.</li>
+                <li><strong>Desafíos en la protección de datos:</strong> A pesar de los beneficios, la ley plantea desafíos relacionados con la protección de datos personales. Es crucial que las entidades implementen medidas adecuadas para asegurar la seguridad de los sistemas y el buen uso de la información.</li>
+                <li><strong>Confianza y transparencia:</strong> La ley busca generar confianza en la población, siempre que se respeten los derechos de privacidad y se utilicen los datos biométricos de manera adecuada.</li>
+            </ul>
+        
+            <h6>Conclusión</h6>
+            <p>La Ley N° 30227 establece un marco normativo claro para el uso de la identificación biométrica, promoviendo la eficiencia y seguridad en los servicios públicos y privados. Sin embargo, su implementación requiere un enfoque equilibrado entre innovación tecnológica y la salvaguarda de los derechos fundamentales de los ciudadanos.</p>
+        </div>        
+    </main>    
+    
+    <footer>
+        <div class="contenedor-footer-redes">
+            <div class="footer-info">
+                <p>&copy; 2024 Mosquera Zevallos Valerio</p>
+                <p>Todos los derechos reservados</p>
+                <p>Elaboración propia</p>
+            </div>
+            <div class="footer-contact">
+                <p>Estudiante de la Universidad Peruana Los Andes</p>
+                <p>Correo institucional: <a href="mailto:r03398d@ms.upla.edu.pe">r03398d@ms.upla.edu.pe</a></p>
+                <p>Correo personal: <a href="mailto:mosqueravalerio10@gmail.com">mosqueravalerio10@gmail.com</a></p>
+            </div>
+            <div class="footer-socials">
+                <a href="https://linkedin.com/in/valerio-mosquera-4b7884329" target="_blank" rel="noopener noreferrer" class="text-white">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="https://github.com/Vaalerio" target="_blank" rel="noopener noreferrer" class="text-white">
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="../js/main.js"></script>
+</body>
+</html>

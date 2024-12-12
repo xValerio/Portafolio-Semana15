@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semana 10 - Actividades</title>
+    <link rel="stylesheet" href="../css/index-estilo.css">
+    <link rel="stylesheet" href="../css/index-estilo.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/alphardex/aqua.css/dist/aqua.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Pacifico&family=Satisfy&display=swap" rel="stylesheet">        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+</head>
+<body>
+    <div id="bg-animation"></div>
+    <header>
+        <div class="contenedorCabecera">
+            <button type="button" class="menu-button" aria-controls="sidebar" aria-expanded="false">☰</button>
+            <div class="logo">
+                <img src="../img/logo.png" alt="Logo de la Universidad Peruana Los Andes">
+            </div>
+            <div class="titulo-container">
+                <h1 class="tituloPortafolio">Base de Datos</h1>
+                <h5 class="nombre" aria-hidden="true">Valerio M.Z.</h5>
+            </div>            
+            <div class="sobre-mi">
+                <nav>
+                    <ul>
+                        <li><a href="#sobre-mi">Sobre Mí</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
+                    </ul>
+                </nav>
+            </div>                        
+        </div>
+    </header>
+
+    <nav class="sidebar" id="sidebar">
+        <header class="contenedor-menu">
+            <h1>Menú</h1>
+            <button class="close-button" aria-controls="sidebar" aria-expanded="false">×</button>
+        </header>
+        <ul class="menu">
+            <li>
+                <a href="index.html">
+                    <i class="fa fa-home"></i> Inicio
+                </a>
+            </li>
+            <li>
+                <a class="toggle-submenu-btn" aria-expanded="false">
+                    <i class="fa fa-database"></i> Base de Datos II
+                </a>
+                <ul class="submenu">
+                    <li>
+                        <a class="toggle-submenu-btn" aria-expanded="false">
+                            Unidad I
+                        </a>
+                        <ul class="sub-submenu">
+                            <li><a href="Semana01-actividades.html">Semana 01</a></li>
+                            <li><a href="Semana02-actividades.html">Semana 02</a></li>
+                            <li><a href="Semana03-actividades.html">Semana 03</a></li>
+                            <li><a href="Semana04-actividades.html">Semana 04</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="toggle-submenu-btn" aria-expanded="false">
+                            Unidad II
+                        </a>
+                        <ul class="sub-submenu">
+                            <li><a href="Semana05-actividades.html">Semana 05</a></li>
+                            <li><a href="Semana06-actividades.html">Semana 06</a></li>
+                            <li><del><a href="Semana07-actividades.html">Semana 07</a></del></li>
+                            <li><a href="Semana08-actividades.html">Semana 08</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="toggle-submenu-btn" aria-expanded="false">
+                            Unidad III
+                        </a>
+                        <ul class="sub-submenu">
+                            <li><del><a href="Semana07-actividades.html">Semana 09</a></del></li>
+                            <li><a href="Semana10-actividades.html">Semana 10</a></li>
+                            <li><a href="Semana11-actividades.html">Semana 11</a></li>
+                            <li><a href="Semana12-actividades.html">Semana 12</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="toggle-submenu-btn" aria-expanded="false">
+                            Unidad IV
+                        </a>
+                        <ul class="sub-submenu">
+                            <li><del><a href="Semana07-actividades.html">Semana 13</a></del></li>
+                            <li><a href="Semana14-actividades.html">Semana 14</a></li>
+                            <li><del></del><a href="Semana07-actividades.html">Semana 15</a><del></del></li>
+                            <li><a href="Semana16-actividades.html">Semana 16</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a class="toggle-submenu-btn" aria-expanded="false">
+                    <i class="fa fa-cog"></i> Taller De Aplicaciones I
+                </a>
+                <ul class="submenu">
+                    <li>
+                        <a class="toggle-submenu-btn" aria-expanded="false">
+                            Unidad I
+                        </a>
+                        <ul class="sub-submenu">
+                            <del><li><a href="Semana07-actividades.html">Semana 01</a></li></del>
+                            <del><li><a href="Semana07-actividades.html">Semana 02</a></li></del>
+                            <del><li><a href="Semana07-actividades.html">Semana 03</a></li></del>
+                            <del><li><a href="Semana07-actividades.html">Semana 04</a></li></del>
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="toggle-submenu-btn" aria-expanded="false">
+                            Unidad II
+                        </a>
+                        <ul class="sub-submenu">
+                            <del><li><a href="Semana07-actividades.html">Semana 05</a></li></del>
+                            <del><li><a href="Semana07-actividades.html">Semana 06</a></li></del>
+                            <del><li><a href="Semana07-actividades.html">Semana 07</a></li></del>
+                            <del><li><a href="Semana07-actividades.html">Semana 08</a></li></del>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a class="toggle-submenu-btn" aria-expanded="false">
+                    <i class="fas fa-laptop"></i> Taller De Aplicaciones II
+                </a>
+                <ul class="submenu">
+                    <li>
+                        <a class="toggle-submenu-btn" aria-expanded="false">
+                            Unidad III
+                        </a>
+                        <ul class="sub-submenu">
+                            <del><li><a href="Semana07-actividades.html">Semana 09</a></li></del>
+                            <del><li><a href="Semana07-actividades.html">Semana 10</a></li></del>
+                            <del><li><a href="Semana07-actividades.html">Semana 11</a></li></del>
+                            <del><li><a href="Semana07-actividades.html">Semana 12</a></li></del>
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="toggle-submenu-btn" aria-expanded="false">
+                            Unidad IV
+                        </a>
+                        <ul class="sub-submenu">
+                            <del><li><a href="Semana07-actividades.html">Semana 13</a></li></del>
+                            <del><li><a href="Semana07-actividades.html">Semana 14</a></li></del>
+                            <del><li><a href="Semana07-actividades.html">Semana 15</a></li></del>
+                            <del><li><a href="Semana07-actividades.html">Semana 16</a></li></del>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="#Otros-Cursos">
+                    <i class="fas fa-window-restore"></i> Otros Cursos
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="contenedor-breadcrumb">
+        <ul class="breadcrumb">
+            <li class="breadcrumb-item"><a href="../index.html">Inicio</a></li>
+            <li class="breadcrumb-item"><a href="BD-Semana10.html">Semana 10</a></li>
+            <li class="breadcrumb-item"><a href="Semana10-actividades.html">Actividades</a></li>
+        </ul>
+    </div>
+
+    <main>
+        <!-- Introducción -->
+        <div id="introduccion" class="fade-in text-center">
+            <h1 class="subTitulo">Encriptación de Campos en Base de Datos en Microsoft Azure</h1>
+            <p class="introduccion-texto">Aquí vamos a ver cómo encriptar campos específicos dentro de una base de datos SQL en Azure. Esto es útil para proteger datos sensibles como contraseñas, tarjetas de crédito o cualquier tipo de información privada que no queramos que esté accesible sin protección.</p>
+            <p class="introduccion-texto">La encriptación no solo es clave para la seguridad, sino que también es una forma de asegurarse de cumplir con normativas como GDPR, HIPAA o PCI DSS. A continuación, te cuento cómo hacerlo paso a paso en Azure.</p>
+        </div>
+    
+        <hr class="section-divider">
+    
+        <!-- Requisitos Previos -->
+        <div id="requisitos-previos" class="fade-in">
+            <h2>Requisitos Previos</h2>
+            <p>Asegúrate de tener lo siguiente listo antes de empezar:</p>
+            <div class="pasos-instrucciones">
+                <ul>
+                    <li><strong>Acceso a una base de datos SQL en Microsoft Azure.</strong> Necesitas tener permisos de administrador para poder hacer estos cambios.</li>
+                    <li><strong>Acceso a Azure Key Vault.</strong> Este servicio se usa para crear y manejar las claves de encriptación.</li>
+                    <li><strong>Conocimiento básico de SQL Server Management Studio (SSMS)</strong> o <strong>Azure Data Studio.</strong> Estas herramientas son las que vas a usar para aplicar la encriptación a las columnas de la base de datos.</li>
+                </ul>
+            </div>
+        </div>
+    
+        <hr class="section-divider">
+        
+        <!-- Pasos de Encriptación -->
+        <div id="pasos-encriptacion" class="fade-in">
+            <h2>Pasos para Encriptar Campos</h2>
+    
+            <!-- Paso 1: Preparar el Entorno -->
+            <div class="paso">
+                <h3>1. Preparar el Entorno</h3>
+                <p>Primero, asegúrate de que tienes acceso a tu base de datos SQL en Azure. Solo tienes que iniciar sesión en el portal de Azure y entrar al recurso de base de datos SQL donde vas a aplicar la encriptación.</p>
+                <p><em>Tip: Si no tienes acceso, avísale al admin para que te dé los permisos necesarios.</em></p>
+            </div>
+    
+            <!-- Paso 2: Crear la Base de Datos -->
+            <div class="paso">
+                <h3>2. Crear la Base de Datos "Ejemplo-encriptación"</h3>
+                <p>Ahora vamos a crear una base de datos para probar la encriptación. Lo haremos directamente en el portal de Azure. Sigue estos pasos:</p>
+                <div class="pasos-instrucciones">
+                    <p><strong>1. Entra al portal de Azure</strong> y ve a la sección de <em>SQL Databases</em>.</p>
+                    <p><strong>2. Haz clic en</strong> <em>Crear</em> y selecciona <strong>Base de datos SQL</strong>.</p>
+                    <p><strong>3. Asigna el nombre</strong> "Ejemplo-encriptación" a la base de datos.</p>
+                    <p><strong>4. Configura la base de datos</strong> con los parámetros que necesites, como el servidor SQL y las credenciales de acceso.</p>
+                    <p><strong>5. Haz clic en</strong> <em>Revisar + Crear</em> y luego en <strong>Crear</strong> para que se cree la base de datos.</p>
+                    <p><img src="../img/S10-Capturas/CrearBase-de-Datos.JPG" alt="Crear base de datos" title="Crear Base de Datos"
+                            style="display: block; margin: 0 auto; width: 95%; height: auto;"></p>
+                </div>
+            </div>
+    
+            <!-- Paso 3: Crear Tablas -->
+            <div class="paso">
+                <h3>3. Crear Tablas en la Base de Datos</h3>
+                <p>Ahora que tenemos la base de datos, vamos a crear una tabla para almacenar datos en ella. Para ello, nos dirigimos al <strong>Editor de Consultas</strong> dentro del portal de Azure.</p>
+                <div class="pasos-instrucciones">
+                    <p><strong>1. Accede al portal de Azure</strong> y entra en la base de datos que creaste (Ejemplo-encriptación).</p>
+                    <p><img src="../img/S10-Capturas/Editor.JPG" alt="Crear base de datos" title="Crear Base de Datos"
+                        style="display: block; margin: 0 auto; width: 95%; height: auto;"></p>
+                    <p><strong>2. Ve a la sección</strong> <em>Editor de Consultas</em> y abre una nueva consulta.</p>
+                    <p><img src="../img/S10-Capturas/NuevaConsulta.JPG" alt="Nueva Consulta" title="Nueva Consulta"
+                        style="display: block; margin: 0 auto; width: 95%; height: auto;"></p>
+                    <p><strong>3. Crea una tabla</strong> usando el siguiente script:</p>
+                    <pre><code>CREATE TABLE Clientes (
+        ClienteID INT PRIMARY KEY,
+        Nombre NVARCHAR(100),
+        Email NVARCHAR(100),
+        TarjetaCredito NVARCHAR(16)
+    );</code></pre>
+
+                    <p><img src="../img/S10-Capturas/IngresarScript.JPG" alt="Ingresar Script" title="Ingresar Script"
+                        style="display: block; margin: 0 auto; width: 700px; height: auto;"></p>
+                    <p><strong>4. Ejecuta la consulta</strong> para crear la tabla "Clientes".</p>
+                </div>
+                <p><img src="../img/S10-Capturas/AgregarTabla.JPG" alt="AgregarTabla" title="AgregarTabla"
+                    style="display: block; margin: 0 auto; width: 700px; height: auto;"></p>
+            </div>
+    
+            <!-- Paso 4: Crear la Clave de Encriptación -->
+            <div class="paso">
+                <h3>4. Crear la Clave de Encriptación</h3>
+                <p>Aquí vamos a usar Azure Key Vault para generar y administrar la clave de encriptación. Es importante asegurarse de que tu base de datos tenga acceso al Key Vault. Para hacerlo:</p>
+                <div class="pasos-instrucciones">
+                    <p><strong>1. Abre</strong> <em>Azure Key Vault</em> <strong>en el portal de Azure.</strong></p>
+                    <p><img src="../img/S10-Capturas/Key Vault.JPG" alt="Key Vault" title="Key Vault"
+                            style="display: block; margin: 0 auto; width: 80%; height: auto;"></p>
+                    <p><img src="../img/S10-Capturas/Key Vault01.JPG" alt="Key Vault" title="Key Vault"
+                            style="display: block; margin: 0 auto; width: 600px; height: auto;"></p>
+                    <p><img src="../img/S10-Capturas/certificado.png" alt="certificado" title="certificado"
+                            style="display: block; margin: 0 auto; width: 95%; height: auto;"></p>
+                    <p><strong>2. Da clic en</strong> <em>Generar/Importar</em> <strong>y luego selecciona</strong> <em>Crear clave</em>.</p>
+                    <p><strong>3. Configura la clave</strong> y guárdala en el Key Vault.</p>
+                    <p><strong>4. Da permisos a la base de datos SQL</strong> para que pueda acceder a la clave de encriptación.</p>
+                </div>
+                <p><img src="azure-keyvault-screenshot.jpg" alt="Captura de pantalla de Azure Key Vault" title="Captura de pantalla de Azure Key Vault"></p> <!-- Ejemplo de cómo incluir una captura de pantalla -->
+            </div>
+    
+            <!-- Paso 5: Configurar TDE (Transparent Data Encryption) -->
+            <div class="paso">
+                <h3>5. Configurar Transparent Data Encryption (TDE)</h3>
+                <p>Este paso es opcional, pero muy recomendado. TDE cifra toda la base de datos cuando está en reposo, es decir, cuando no se está utilizando. Así que es un buen extra de seguridad.</p>
+                <div class="pasos-instrucciones">
+                    <p><strong>1. Accede a tu base de datos</strong> en el portal de Azure.</p>
+                    <p><strong>2. En la sección de</strong> <em>Configuración</em>, <strong>busca y selecciona</strong> <em>Transparent Data Encryption (TDE)</em> y habilítalo.</p>
+                </div>
+                <p><img src="tde-configuration-diagram.png" alt="Diagrama de flujo de TDE" title="Diagrama de configuración de TDE"></p> <!-- Ejemplo de diagrama de flujo -->
+            </div>
+    
+            <!-- Paso 6: Encriptar Campos Específicos -->
+            <div class="paso">
+                <h3>6. Encriptar Campos Específicos</h3>
+                <p>Para encriptar columnas específicas, usamos la opción de <strong>Always Encrypted</strong> de SQL Server. Esto permite que solo las aplicaciones cliente puedan ver los datos desencriptados. Es como una capa extra de seguridad.</p>
+                <div class="pasos-instrucciones">
+                    <p><strong>1. Conéctate a la base de datos</strong> usando SQL Server Management Studio (SSMS) o Azure Data Studio.</p>
+                    <p><strong>2. Se selecciona la tabla</strong> y la columna que quieres encriptar.</p>
+                    <p><strong>3. Define y aplica una clave de encriptación</strong> a esa columna usando Always Encrypted.</p>
+                </div>
+                <p><img src="always-encrypted-example.jpg" alt="Ejemplo de Always Encrypted" title="Pantalla de Always Encrypted en SSMS"></p> <!-- Ejemplo de captura para Always Encrypted -->
+            </div>
+    
+            <!-- Paso 7: Probar la Encriptación -->
+            <div class="paso">
+                <h3>7. Probar la Encriptación</h3>
+                <p>Una vez que hayas hecho la configuración, es importante verificar que todo esté funcionando bien. Puedes hacer esto ejecutando una consulta SQL y asegurándote de que los datos encriptados no sean legibles.</p>
+                <p>Para probarlo, usa una consulta SELECT y verás que los datos en las columnas encriptadas aparecerán como un conjunto de caracteres ilegibles.</p>
+            </div>
+        </div>
+    
+        <hr class="section-divider">
+    
+        <!-- Conclusión -->
+        <div id="conclusion" class="fade-in">
+            <h2>Conclusión</h2>
+            <p>Encriptar los datos es clave para proteger la información sensible en tu base de datos, y con Azure es bastante sencillo hacerlo usando herramientas como TDE y Always Encrypted. Si sigues estos pasos, podrás asegurarte de que tus datos estén siempre protegidos y cumpliendo con las normativas de privacidad.</p>
+        </div>
+    </main>    
+    
+    <footer>
+        <div class="contenedor-footer-redes">
+            <div class="footer-info">
+                <p>&copy; 2024 Mosquera Zevallos Valerio</p>
+                <p>Todos los derechos reservados</p>
+                <p>Elaboración propia</p>
+            </div>
+            <div class="footer-contact">
+                <p>Estudiante de la Universidad Peruana Los Andes</p>
+                <p>Correo institucional: <a href="mailto:r03398d@ms.upla.edu.pe">r03398d@ms.upla.edu.pe</a></p>
+                <p>Correo personal: <a href="mailto:mosqueravalerio10@gmail.com">mosqueravalerio10@gmail.com</a></p>
+            </div>
+            <div class="footer-socials">
+                <a href="https://linkedin.com/in/valerio-mosquera-4b7884329" target="_blank" rel="noopener noreferrer" class="text-white">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="https://github.com/Vaalerio" target="_blank" rel="noopener noreferrer" class="text-white">
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="../js/main.js"></script>
+</body>
+</html>

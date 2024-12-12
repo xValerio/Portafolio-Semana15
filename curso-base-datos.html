@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio - Valerio Mosquera Zevallos</title>
+    <link rel="stylesheet" href="css/index-estilo.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/alphardex/aqua.css/dist/aqua.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400&family=Pacifico&family=Satisfy&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <style>
+        /* Estilos generales */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f6f7;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Contenedor principal del perfil */
+        .profile-container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 8px;
+        }
+
+        /* Cabecera del perfil */
+        .profile-header {
+            display: flex;
+            align-items: center;
+            padding: 20px;
+            border-bottom: 1px solid #e4e6eb;
+        }
+
+        .profile-picture {
+            margin-right: 20px;
+        }
+
+        .profile-picture img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        .profile-info h1 {
+            margin: 0;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .profile-info .profession {
+            font-size: 16px;
+            color: #65676b;
+        }
+
+        .profile-info .location {
+            font-size: 14px;
+            color: #65676b;
+        }
+
+        /* Estilos de los apartados */
+        .profile-content {
+            padding: 20px;
+        }
+
+        .profile-content section {
+            margin-bottom: 20px;
+        }
+
+        .profile-content h2 {
+            font-size: 24px;
+            color: #1877f2;
+            margin-bottom: 10px;
+        }
+
+        .profile-content p {
+            font-size: 16px;
+            line-height: 1.6;
+            color: #333333;
+        }
+
+        /* Sección de separación */
+        hr {
+            border: none;
+            border-top: 1px solid #e4e6eb;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <div id="bg-animation"></div>
+    <header>
+        <div class="contenedorCabecera">
+            <button type="button" class="menu-button" aria-controls="sidebar" aria-expanded="false">☰</button>
+            <div class="logo">
+                <a href="index.html">
+                    <img src="img/logo.png" alt="Logo de la Universidad Peruana Los Andes">
+                </a>
+            </div>            
+            <div class="titulo-container">
+                <h1 class="tituloPortafolio">Portafolio</h1>
+                <h5 class="nombre" aria-hidden="true">Valerio M.Z.</h5>
+            </div>
+            <div class="sobre-mi">
+                <nav>
+                    <ul>
+                        <li><a href="#sobre-mi">Sobre Mí</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <nav class="sidebar" id="sidebar">
+        <header class="contenedor-menu">
+            <h1>Menú</h1>
+            <button class="close-button" aria-controls="sidebar" aria-expanded="false">×</button>
+        </header>
+        <ul class="menu">
+            <li>
+                <a href="index.html">
+                    <i class="fa fa-home"></i> Inicio
+                </a>
+            </li>
+            <li>
+                <a class="toggle-submenu-btn" aria-expanded="false">
+                    <i class="fa fa-database"></i> Base de Datos II
+                </a>
+                <ul class="submenu">
+                    <li>
+                        <a class="toggle-submenu-btn" aria-expanded="false">
+                            Unidad I
+                        </a>
+                        <ul class="sub-submenu">
+                            <li><a href="actividades/Semana01-actividades.html">Semana 01</a></li>
+                            <li><a href="actividades/Semana02-actividades.html">Semana 02</a></li>
+                            <li><a href="actividades/Semana03-actividades.html">Semana 03</a></li>
+                            <li><a href="actividades/Semana04-actividades.html">Semana 04</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="toggle-submenu-btn" aria-expanded="false">
+                            Unidad II
+                        </a>
+                        <ul class="sub-submenu">
+                            <li><a href="actividades/Semana05-actividades.html">Semana 05</a></li>
+                            <li><a href="actividades/Semana06-actividades.html">Semana 06</a></li>
+                            <li><del><a href="actividades/Semana07-actividades.html">Semana 07</a></del></li>
+                            <li><a href="actividades/Semana08-actividades.html">Semana 08</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="toggle-submenu-btn" aria-expanded="false">
+                            Unidad III
+                        </a>
+                        <ul class="sub-submenu">
+                            <li><del><a href="actividades/Semana07-actividades.html">Semana 09</a></del></li>
+                            <li><a href="actividades/Semana10-actividades.html">Semana 10</a></li>
+                            <li><a href="actividades/Semana11-actividades.html">Semana 11</a></li>
+                            <li><a href="actividades/Semana12-actividades.html">Semana 12</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="toggle-submenu-btn" aria-expanded="false">
+                            Unidad IV
+                        </a>
+                        <ul class="sub-submenu">
+                            <li><del><a href="actividades/Semana07-actividades.html">Semana 13</a></del></li>
+                            <li><a href="actividades/Semana14-actividades.html">Semana 14</a></li>
+                            <li><del></del><a href="actividades/Semana07-actividades.html">Semana 15</a><del></del></li>
+                            <li><a href="actividades/Semana16-actividades.html">Semana 16</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a class="toggle-submenu-btn" aria-expanded="false">
+                    <i class="fa fa-cog"></i> Taller De Aplicaciones I
+                </a>
+                <ul class="submenu">
+                    <li>
+                        <a class="toggle-submenu-btn" aria-expanded="false">
+                            Unidad I
+                        </a>
+                        <ul class="sub-submenu">
+                            <del><li><a href="Cursos/TallerDeAplicacionesI/semanas/semana1/TA-Semana01.html">Semana 01</a></li></del>
+                            <del><li><a href="Cursos/TallerDeAplicacionesI/semanas/semana2/TA-Semana02.html">Semana 02</a></li></del>
+                            <del><li><a href="Cursos/TallerDeAplicacionesI/semanas/semana3/TA-Semana03.html">Semana 03</a></li></del>
+                            <del><li><a href="Cursos/TallerDeAplicacionesI/semanas/semana4/TA-Semana04.html">Semana 04</a></li></del>
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="toggle-submenu-btn" aria-expanded="false">
+                            Unidad II
+                        </a>
+                        <ul class="sub-submenu">
+                            <del><li><a href="Cursos/TallerDeAplicacionesI/semanas/semana5/TA-Semana05.html">Semana 05</a></li></del>
+                            <del><li><a href="Cursos/TallerDeAplicacionesI/semanas/semana6/TA-Semana06.html">Semana 06</a></li></del>
+                            <del><li><a href="Cursos/TallerDeAplicacionesI/semanas/semana7/TA-Semana07.html">Semana 07</a></li></del>
+                            <del><li><a href="Cursos/TallerDeAplicacionesI/semanas/semana8/TA-Semana08.html">Semana 08</a></li></del>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a class="toggle-submenu-btn" aria-expanded="false">
+                    <i class="fas fa-laptop"></i> Taller De Aplicaciones II
+                </a>
+                <ul class="submenu">
+                    <li>
+                        <a class="toggle-submenu-btn" aria-expanded="false">
+                            Unidad III
+                        </a>
+                        <ul class="sub-submenu">
+                            <del><li><a href="Cursos/TallerDeAplicacionesII/semanas/semana9/TA-Semana09.html">Semana 09</a></li></del>
+                            <del><li><a href="Cursos/TallerDeAplicacionesII/semanas/semana10/TA-Semana10.html">Semana 10</a></li></del>
+                            <del><li><a href="Cursos/TallerDeAplicacionesII/semanas/semana11/TA-Semana11.html">Semana 11</a></li></del>
+                            <del><li><a href="Cursos/TallerDeAplicacionesII/semanas/semana12/TA-Semana12.html">Semana 12</a></li></del>
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="toggle-submenu-btn" aria-expanded="false">
+                            Unidad IV
+                        </a>
+                        <ul class="sub-submenu">
+                            <del><li><a href="Cursos/TallerDeAplicacionesII/semanas/semana13/TA-Semana13.html">Semana 13</a></li></del>
+                            <del><li><a href="Cursos/TallerDeAplicacionesII/semanas/semana14/TA-Semana14.html">Semana 14</a></li></del>
+                            <del><li><a href="Cursos/TallerDeAplicacionesII/semanas/semana15/TA-Semana15.html">Semana 15</a></li></del>
+                            <del><li><a href="Cursos/TallerDeAplicacionesII/semanas/semana16/TA-Semana16.html">Semana 16</a></li></del>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="#Otros-Cursos">
+                    <i class="fas fa-window-restore"></i> Otros Cursos
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="profile-container">
+            <div class="profile-header">
+                <div class="profile-picture">
+                    <img src="img/fotoIng.jpeg" alt="Foto del Docente">
+                </div>
+                <div class="profile-info">
+                    <h1>Curso de Base de Datos II</h1>
+                    <p class="profession">Impartido por Raúl Enrique Fernández Bejarano</p>
+                    <p class="location">Universidad Peruana Los Andes</p>
+                </div>
+            </div>
+
+            <div class="profile-content">
+
+                <section id="introduccion">
+                    <h2>Introducción</h2>
+                    <p>Este curso está diseñado para proporcionar a los estudiantes los conocimientos y habilidades necesarios para comprender y desarrollar bases de datos utilizando técnicas avanzadas. A lo largo del curso, se abordarán temas como la normalización, el diseño de bases de datos, el lenguaje SQL y la optimización de consultas, con un enfoque práctico que permita a los estudiantes aplicar lo aprendido en proyectos reales.</p>
+                </section>
+
+                <section id="objetivos">
+                    <h2>Objetivos del Curso</h2>
+                    <ul>
+                        <li>Comprender los principios fundamentales de las bases de datos relacionales.</li>
+                        <li>Aprender a diseñar y normalizar bases de datos eficientes.</li>
+                        <li>Dominar el lenguaje SQL para crear, modificar y consultar bases de datos.</li>
+                        <li>Desarrollar habilidades en la optimización de consultas para mejorar el rendimiento.</li>
+                        <li>Aplicar conceptos de bases de datos en proyectos reales y trabajos prácticos.</li>
+                    </ul>
+                </section>
+
+                <section id="temario">
+                    <h2>Temario</h2>
+                    <p>El curso está dividido en varios módulos que cubren los siguientes temas:</p>
+                    <ol>
+                        <li>Introducción a las bases de datos relacionales.</li>
+                        <li>Modelado de datos y normalización.</li>
+                        <li>Lenguaje SQL: creación y manipulación de bases de datos.</li>
+                        <li>Consultas complejas en SQL.</li>
+                        <li>Optimización de bases de datos y rendimiento de consultas.</li>
+                        <li>Proyecto final: desarrollo de una base de datos para una empresa.</li>
+                    </ol>
+                </section>
+
+                <section id="metodologia">
+                    <h2>Metodología</h2>
+                    <p>El curso se lleva a cabo a través de clases teóricas y prácticas, en donde los estudiantes tendrán la oportunidad de trabajar con herramientas y tecnologías actuales para diseñar y gestionar bases de datos. Las clases estarán acompañadas de ejercicios prácticos y un proyecto final que permitirá a los estudiantes aplicar lo aprendido en un contexto real.</p>
+                </section>
+
+                <section id="requisitos">
+                    <h2>Requisitos</h2>
+                    <p>Para tomar este curso, se recomienda que los estudiantes tengan conocimientos previos en programación y en el uso de sistemas de gestión de bases de datos (DBMS). Se requiere un nivel básico de conocimiento en SQL y estructuras de datos.</p>
+                </section>
+
+                <section id="evaluacion">
+                    <h2>Evaluación</h2>
+                    <p>La evaluación del curso se basará en:</p>
+                    <ul>
+                        <li>Exámenes parciales (30%)</li>
+                        <li>Trabajos prácticos (40%)</li>
+                        <li>Proyecto final (30%)</li>
+                    </ul>
+                </section>
+            </div>
+        </div>
+    </main>    
+
+    <footer>
+        <div class="contenedor-footer-redes">
+            <div class="footer-info">
+                <p>&copy; 2024 Mosquera Zevallos Valerio</p>
+                <p>Todos los derechos reservados</p>
+                <p>Elaboración propia</p>
+            </div>
+            <div class="footer-contact">
+                <p>Estudiante de la Universidad Peruana Los Andes</p>
+                <p>Correo institucional: <a href="mailto:r03398d@ms.upla.edu.pe">r03398d@ms.upla.edu.pe</a></p>
+                <p>Correo personal: <a href="mailto:mosqueravalerio10@gmail.com">mosqueravalerio10@gmail.com</a></p>
+            </div>
+            <div class="footer-socials">
+                <a href="https://linkedin.com/in/valerio-mosquera-4b7884329" target="_blank" rel="noopener noreferrer" class="text-white">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="https://github.com/Vaalerio" target="_blank" rel="noopener noreferrer" class="text-white">
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
+        </div>
+    </footer>            
+    <script src="js/main.js"></script>
+</body>
+</html>

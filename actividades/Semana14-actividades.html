@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semana 14 - Actividades</title>
+    <link rel="stylesheet" href="../css/index-estilo.css">
+    <link rel="stylesheet" href="../css/index-estilo.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/alphardex/aqua.css/dist/aqua.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Pacifico&family=Satisfy&display=swap" rel="stylesheet">        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <style>
+        #btn-top {
+            position: fixed;
+            bottom: 20px; /* Distancia desde el borde inferior de la pantalla */
+            right: 20px;  /* Distancia desde el borde derecho de la pantalla */
+            background-color: #008CBA;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            display: none; /* Inicialmente oculto */
+        }
+
+        #btn-top:hover {
+            background-color: #555;
+        }
+    </style>   
+</head>
+<body>
+    <div id="bg-animation"></div>
+    <header>
+        <div class="contenedorCabecera">
+            <button type="button" class="menu-button" aria-controls="sidebar" aria-expanded="false">☰</button>
+            <div class="logo">
+                <img src="../img/logo.png" alt="Logo de la Universidad Peruana Los Andes">
+            </div>
+            <div class="titulo-container">
+                <h1 class="tituloPortafolio">Base de Datos</h1>
+                <h5 class="nombre" aria-hidden="true">Valerio M.Z.</h5>
+            </div>            
+            <div class="sobre-mi">
+                <nav>
+                    <ul>
+                        <li><a href="#sobre-mi">Sobre Mí</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
+                    </ul>
+                </nav>
+            </div>                        
+        </div>
+    </header>
+
+    <nav class="sidebar" id="sidebar">
+        <header class="contenedor-menu">
+            <h1>Menú</h1>
+            <button class="close-button" aria-controls="sidebar" aria-expanded="false">×</button>
+        </header>
+        <ul class="menu">
+            <li>
+                <a href="index.html">
+                    <i class="fa fa-home"></i> Inicio
+                </a>
+            </li>
+            <li>
+                <a class="toggle-submenu-btn" aria-expanded="false">
+                    <i class="fa fa-database"></i> Base de Datos II
+                </a>
+                <ul class="submenu">
+                    <li>
+                        <a class="toggle-submenu-btn" aria-expanded="false">
+                            Unidad I
+                        </a>
+                        <ul class="sub-submenu">
+                            <li><a href="Semana01-actividades.html">Semana 01</a></li>
+                            <li><a href="Semana02-actividades.html">Semana 02</a></li>
+                            <li><a href="Semana03-actividades.html">Semana 03</a></li>
+                            <li><a href="Semana04-actividades.html">Semana 04</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="toggle-submenu-btn" aria-expanded="false">
+                            Unidad II
+                        </a>
+                        <ul class="sub-submenu">
+                            <li><a href="Semana05-actividades.html">Semana 05</a></li>
+                            <li><a href="Semana06-actividades.html">Semana 06</a></li>
+                            <li><del><a href="Semana07-actividades.html">Semana 07</a></del></li>
+                            <li><a href="Semana08-actividades.html">Semana 08</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="toggle-submenu-btn" aria-expanded="false">
+                            Unidad III
+                        </a>
+                        <ul class="sub-submenu">
+                            <li><del><a href="Semana07-actividades.html">Semana 09</a></del></li>
+                            <li><a href="Semana10-actividades.html">Semana 10</a></li>
+                            <li><a href="Semana11-actividades.html">Semana 11</a></li>
+                            <li><a href="Semana12-actividades.html">Semana 12</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="toggle-submenu-btn" aria-expanded="false">
+                            Unidad IV
+                        </a>
+                        <ul class="sub-submenu">
+                            <li><del><a href="Semana07-actividades.html">Semana 13</a></del></li>
+                            <li><a href="Semana14-actividades.html">Semana 14</a></li>
+                            <li><del></del><a href="Semana07-actividades.html">Semana 15</a><del></del></li>
+                            <li><a href="Semana16-actividades.html">Semana 16</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a class="toggle-submenu-btn" aria-expanded="false">
+                    <i class="fa fa-cog"></i> Taller De Aplicaciones I
+                </a>
+                <ul class="submenu">
+                    <li>
+                        <a class="toggle-submenu-btn" aria-expanded="false">
+                            Unidad I
+                        </a>
+                        <ul class="sub-submenu">
+                            <del><li><a href="Semana07-actividades.html">Semana 01</a></li></del>
+                            <del><li><a href="Semana07-actividades.html">Semana 02</a></li></del>
+                            <del><li><a href="Semana07-actividades.html">Semana 03</a></li></del>
+                            <del><li><a href="Semana07-actividades.html">Semana 04</a></li></del>
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="toggle-submenu-btn" aria-expanded="false">
+                            Unidad II
+                        </a>
+                        <ul class="sub-submenu">
+                            <del><li><a href="Semana07-actividades.html">Semana 05</a></li></del>
+                            <del><li><a href="Semana07-actividades.html">Semana 06</a></li></del>
+                            <del><li><a href="Semana07-actividades.html">Semana 07</a></li></del>
+                            <del><li><a href="Semana07-actividades.html">Semana 08</a></li></del>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a class="toggle-submenu-btn" aria-expanded="false">
+                    <i class="fas fa-laptop"></i> Taller De Aplicaciones II
+                </a>
+                <ul class="submenu">
+                    <li>
+                        <a class="toggle-submenu-btn" aria-expanded="false">
+                            Unidad III
+                        </a>
+                        <ul class="sub-submenu">
+                            <del><li><a href="Semana07-actividades.html">Semana 09</a></li></del>
+                            <del><li><a href="Semana07-actividades.html">Semana 10</a></li></del>
+                            <del><li><a href="Semana07-actividades.html">Semana 11</a></li></del>
+                            <del><li><a href="Semana07-actividades.html">Semana 12</a></li></del>
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="toggle-submenu-btn" aria-expanded="false">
+                            Unidad IV
+                        </a>
+                        <ul class="sub-submenu">
+                            <del><li><a href="Semana07-actividades.html">Semana 13</a></li></del>
+                            <del><li><a href="Semana07-actividades.html">Semana 14</a></li></del>
+                            <del><li><a href="Semana07-actividades.html">Semana 15</a></li></del>
+                            <del><li><a href="Semana07-actividades.html">Semana 16</a></li></del>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="#Otros-Cursos">
+                    <i class="fas fa-window-restore"></i> Otros Cursos
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="contenedor-breadcrumb">
+        <ul class="breadcrumb">
+            <li class="breadcrumb-item"><a href="../index.html">Inicio</a></li>
+            <li class="breadcrumb-item"><a href="BD-Semana14.html">Semana 14</a></li>
+            <li class="breadcrumb-item"><a href="Semana14-actividades.html">Actividades</a></li>
+        </ul>
+    </div>
+
+    <main>
+        <div id="titulo-libro" style="text-align: center;">
+            <h1>Libro - SQL Server</h1>
+        </div>
+
+        <hr class="section-divider">
+        <!-- Sección del Índice -->
+        <div id="indice" class="fade-in">
+            <h3>Índice</h3>
+            <ul style="list-style-type: none; padding-left: 0; text-align: left; margin-left: 0;">
+                <li><a href="#introduccion">1. Introducción</a></li>
+                <li><a href="#instalacion-sql">2. Instalación de SQL Server</a></li>
+                <li><a href="#configuracion-sql">3. Configuración de SQL Server</a></li>
+                <li><a href="#seguridad-sql">4. Configuración de la Seguridad en SQL Server</a></li>
+                <li><a href="#servidores-vinculados">5. Configuración de Servidores Vinculados</a></li>
+                <li><a href="#analizador-sql">6. Analizador de SQL Server</a></li>
+                <li><a href="#optimizacion-motor">7. Asistente para la optimización del motor de bases de datos</a></li>
+                <li><a href="#bloqueos">8. Resolución de bloqueos e interbloqueos</a></li>
+                <li><a href="#errores-servidor">9. Diagnosticar y resolver errores de servidor</a></li>
+                <li><a href="#reflejo-base-datos">10. Creación de reflejo de base de datos</a></li>
+                <li><a href="#registro-transacciones">11. Gestión del Registro de Transacciones</a></li>
+                <li><a href="#instantaneas-base-datos">12. Instantáneas de base de datos</a></li>
+                <li><a href="#web-xml">13. Servicios Web XML Nativos</a></li>
+                <li><a href="#service-broker">14. Service Broker</a></li>
+                <li><a href="#carga-masiva">15. Carga masiva de datos</a></li>
+                <li><a href="#replica-bases-datos">16. Réplica de Bases de Datos</a></li>
+                <li><a href="#agente-sql">17. Agente de SQL Server</a></li>
+                <li><a href="#copias-seguridad">18. Copias de seguridad de Bases de Datos</a></li>
+                <li><a href="#directivas">19. Administración de Directivas</a></li>
+                <li><a href="#eventos">20. Motorizar eventos</a></li>
+                <li><a href="#rendimiento">21. Rendimiento</a></li>
+                <li><a href="#optimizacion-almacenamiento">22. Optimización del Almacenamiento</a></li>
+                <li><a href="#filestream">23. FILESTREAM</a></li>
+            </ul>
+        </div>
+    
+        <hr class="section-divider">
+    
+        <!-- Sección 1: Introducción -->
+        <div id="introduccion" class="contenedor-seccion">
+            <h3>1. Introducción</h3>
+            <h4>Historia y Evolución de SQL Server</h4>
+            <p>SQL Server 2008 es la última versión del Sistema Gestor de Bases de Datos de Microsoft, orientado principalmente a grandes empresas. SQL Server ha evolucionado desde su primera versión en 1988, desarrollada en colaboración con Sybase, IBM y Ashton-Tate, inicialmente para el sistema operativo OS/2. La primera versión para Windows, SQL Server 4.2, apareció en 1993, y a partir de ahí, el producto ha ido mejorando su rendimiento y funcionalidad con cada nueva versión. SQL Server ha pasado de ser una base de datos para pequeños entornos (como la versión 6.0) a convertirse en una de las opciones más robustas y escalables para entornos empresariales, en competencia directa con Oracle y DB2.</p>
+            <p>En la década de los 2000, SQL Server 2000 consolidó a Microsoft como un competidor serio en el mercado de los RDBMS, y con la versión 2005, SQL Server comenzó a competir de manera efectiva con las soluciones de bases de datos de alto rendimiento. Con SQL Server 2008, Microsoft introduce mejoras tanto en el rendimiento como en la administración, lo que lo hace aún más adecuado para entornos empresariales grandes y complejos.</p>
+            
+            <h4>Características de SQL Server 2008</h4>
+            <p>SQL Server 2008 incluye un conjunto de nuevas características que optimizan la gestión de bases de datos y mejoran el rendimiento. Una de las principales mejoras es la integración con .NET, lo que permite ejecutar código .NET directamente dentro de SQL Server, abriendo la posibilidad de trabajar con ensamblados en C# o Visual Basic 2008. Esto complementa las funcionalidades de T-SQL, ofreciendo mayor flexibilidad a los desarrolladores. Además, se ha introducido soporte completo para XML, incluyendo un nuevo tipo de datos XML que permite almacenar documentos XML de manera nativa, realizar búsquedas XQuery y validar documentos contra esquemas XSD.</p>
+            <p>El sistema también ofrece una renovación de sus herramientas de administración. El SQL Server Management Studio (SSMS) ha sido una gran mejora respecto a versiones anteriores como el Administrador Corporativo y el Analizador de Consultas, y ahora permite la gestión de servidores tanto OLTP (procesamiento de transacciones en línea) como OLAP (procesamiento analítico en línea). También se incluyen nuevas funcionalidades para integrar Visual Studio Source Safe, lo que facilita el trabajo en equipo y el control de versiones de proyectos de desarrollo.</p>
+            <p>SQL Server 2008 también mejora los Reporting Services (SSRS) y los Integration Services (SSIS), ampliando las capacidades de informes y de integración de datos, lo que facilita la creación de soluciones de inteligencia empresarial.</p>
+            
+            <h4>Ediciones de SQL Server 2008</h4>
+            <p>SQL Server 2008 se ofrece en varias ediciones, cada una adaptada a diferentes necesidades y presupuestos:</p>
+            <ul>
+                <li><strong>Express:</strong> La edición más básica y gratuita. Está diseñada para entornos pequeños y limitados en recursos, y aunque es bastante funcional, tiene restricciones en cuanto al número de conexiones concurrentes y el tamaño de la base de datos.</li>
+                <li><strong>Workgroup:</strong> Ideal para entornos pequeños y medianos. Incluye muchas de las funcionalidades de SQL Server, pero carece de algunas características avanzadas como la replicación y la alta disponibilidad.</li>
+                <li><strong>Standard:</strong> Pensada para empresas de tamaño medio. Esta edición incluye la mayoría de las características, como los Servicios de Análisis y los Servicios de Integración, pero no soporta funciones avanzadas como el particionado de tablas o la restauración online de bases de datos.</li>
+                <li><strong>Developer:</strong> Esta edición contiene todas las funcionalidades de la versión Enterprise, pero está destinada a entornos de prueba y desarrollo. Tiene limitaciones en cuanto a la cantidad de CPUs soportadas y licencias.</li>
+                <li><strong>Enterprise:</strong> La edición más completa, diseñada para entornos empresariales grandes. Ofrece características avanzadas como alta disponibilidad, particionado de tablas, y un alto nivel de escalabilidad y rendimiento, pero tiene un costo considerable.</li>
+            </ul>
+            
+            <h4>Funciones Avanzadas y Business Intelligence</h4>
+            <p>Una de las características más destacadas de SQL Server 2008 es su enfoque en Business Intelligence (BI). Todas las versiones, excepto la Express, incluyen soporte para Reporting Services, integración de web services y análisis de datos. La edición Enterprise es la que ofrece la mayor cantidad de herramientas para el análisis de datos, como el modelado de datos basado en el Modelo Dimensional Unificado (UDM) y la minería de datos.</p>
+            <p>Además, la seguridad en SQL Server 2008 se ha mejorado, incorporando nuevas herramientas para la revisión de cuentas y encriptación de datos. También se ha optimizado la administración del sistema mediante nuevas herramientas como el Performance Data Collection y el Best Practices Analyzer, que ayudan a los administradores a mantener el sistema de forma eficiente.</p>
+        </div>
+    
+        <hr class="section-divider">
+    
+        <!-- Sección 2: Instalación de SQL Server -->
+        <div id="instalacion-sql" class="contenedor-seccion">
+            <h3>2. Instalación de SQL Server</h3>
+
+            <h4>2.1 Requisitos de Hardware</h4>
+            <p>La instalación de SQL Server 2008 requiere que el equipo cumpla con ciertos requisitos de hardware para garantizar el correcto funcionamiento del sistema. Los requisitos básicos incluyen:</p>
+            <ul>
+                <li><strong>RAM:</strong> Al menos 512MB, aunque se recomienda 1GB para un mejor rendimiento.</li>
+                <li><strong>Procesador:</strong> Un procesador PIII o superior con una velocidad mínima de 600 MHz (recomendado 1 GHz).</li>
+                <li><strong>Espacio en disco:</strong> Al menos 1.6 GB para archivos temporales, independientemente de la ubicación de instalación de los componentes. Dependiendo de las características instaladas, el espacio puede variar. Por ejemplo, el motor de base de datos y los archivos de datos requieren 150 MB, mientras que las bases de datos de ejemplo ocupan hasta 390 MB.</li>
+            </ul>
+            <p>Para la edición SQL Server Express Edition, los requisitos de memoria son menores, con un mínimo de 192MB de RAM.</p>
+
+            <h4>2.2 Requisitos de Software</h4>
+            <p>Para instalar SQL Server 2008, se recomienda cumplir con ciertos requisitos de software. Estos pueden variar dependiendo del entorno en el que se realice la instalación:</p>
+            <ul>
+                <li><strong>Entorno de pruebas:</strong> En un entorno de pruebas, se puede instalar SQL Server 2008 en un sistema operativo Windows XP SP2, utilizando la edición Developer para acceder a todas las características del producto.</li>
+                <li><strong>Entorno de producción:</strong> Para entornos de producción, especialmente en grandes empresas, se recomienda instalar SQL Server 2008 sobre un sistema operativo Windows Server 2003. Esto garantizará un rendimiento óptimo, aprovechando características como la alta disponibilidad, escalabilidad y fiabilidad, esenciales en sistemas críticos.</li>
+            </ul>
+            <p>Es crucial verificar que los servicios de Internet Information Services (IIS) estén instalados, ya que son necesarios para características como los Reporting Services de SQL Server 2008.</p>
+
+            <h4>2.3 Proceso de Instalación</h4>
+            <p>El proceso de instalación de SQL Server 2008 se lleva a cabo en dos fases principales:</p>
+            <ul>
+                <li><strong>Fase 1:</strong> Verificación de los requisitos del sistema y la instalación de los prerrequisitos de SQL Server 2008. El instalador comprueba que la máquina cumpla con los requisitos necesarios y realiza la configuración inicial.</li>
+                <li><strong>Fase 2:</strong> Instalación de los componentes de SQL Server 2008. En esta fase, se seleccionan los componentes a instalar, como el motor de base de datos, Analysis Services, Reporting Services, Integration Services, etc.</li>
+            </ul>
+            <p>El proceso se gestiona mediante un asistente de instalación, que divide las tareas en categorías como planeamiento, instalación, mantenimiento, herramientas y recursos. Este asistente también permite realizar tareas avanzadas, como agregar características a una instalación existente, o instalar SQL Server en un clúster de conmutación por error.</p>
+
+            <h4>2.4 Opciones de Instalación Avanzada</h4>
+            <p>El asistente de instalación de SQL Server 2008 incluye opciones avanzadas para personalizar la instalación:</p>
+            <ul>
+                <li><strong>Instalación basada en un archivo de configuración:</strong> Permite automatizar el proceso de instalación utilizando un archivo de configuración que define las opciones y parámetros específicos.</li>
+                <li><strong>Preparación para clústeres:</strong> Si se requiere una configuración de clúster de conmutación por error, el asistente permite preparar el entorno para que el clúster funcione correctamente.</li>
+                <li><strong>Instalación en varios nodos:</strong> Si se instala SQL Server en un entorno de alta disponibilidad, el asistente permite agregar nodos a un clúster de conmutación por error.</li>
+            </ul>
+
+            <h4>2.5 Compatibilidad con Sistemas Extendidos</h4>
+            <p>Las versiones de 64 bits de SQL Server 2008 son compatibles con sistemas Windows on Windows (WOW64), que permiten ejecutar aplicaciones de 32 bits en un entorno de 64 bits. Esto se logra mediante la emulación del entorno de 32 bits, lo que garantiza que las aplicaciones legadas funcionen correctamente sin necesidad de modificaciones importantes.</p>
+
+            <h4>2.6 Ediciones de SQL Server 2008</h4>
+            <p>SQL Server 2008 se ofrece en varias ediciones, cada una con características específicas que se adaptan a diferentes necesidades:</p>
+            <ul>
+                <li><strong>Enterprise Edition:</strong> La edición más completa, con soporte para todas las características de SQL Server, ideal para grandes empresas con necesidades avanzadas de bases de datos.</li>
+                <li><strong>Developer Edition:</strong> Contiene todas las características de la edición Enterprise, pero está destinada a desarrolladores para crear y probar aplicaciones.</li>
+                <li><strong>Standard Edition:</strong> Ofrece la mayoría de las características esenciales, adecuada para la mayoría de las aplicaciones empresariales.</li>
+                <li><strong>Workgroup Edition:</strong> Está orientada a pequeñas empresas, con características limitadas pero suficientes para manejar bases de datos más simples.</li>
+                <li><strong>Express Edition:</strong> La edición más ligera y gratuita de SQL Server, con limitaciones en cuanto a características y capacidad, ideal para entornos pequeños y aplicaciones menos complejas.</li>
+                <li><strong>Evaluation Edition:</strong> Versión de evaluación con todas las características de la Enterprise Edition, pero limitada en el tiempo.</li>
+            </ul>
+
+            <h4>2.7 Consideraciones Adicionales</h4>
+            <p>Durante la instalación, es importante considerar la configuración de seguridad, como las opciones de autenticación (Windows o modo mixto) y las configuraciones de red. Además, es crucial realizar copias de seguridad regulares durante y después de la instalación para evitar la pérdida de datos importantes.</p>
+        </div>
+
+
+    
+        <hr class="section-divider">
+    
+        <!-- Sección 3: Configuración de SQL Server -->
+        <div id="configuracion-sql" class="contenedor-seccion">
+            <h3>3. Configuración de SQL Server</h3>
+
+            <h4>3.1 Configuración de SQL Server 2008</h4>
+            <p>SQL Server 2008 es una poderosa herramienta de gestión de bases de datos que ofrece una amplia gama de funcionalidades para desarrollar y administrar soluciones de datos. Antes de comenzar a trabajar, es esencial realizar una configuración adecuada para garantizar un rendimiento óptimo y la seguridad de los datos.</p>
+
+            <h4>3.2 SQL Server Management Studio</h4>
+            <p>SQL Server Management Studio (SSMS) es el entorno principal para interactuar con SQL Server. Este proporciona herramientas para diseñar, consultar y administrar bases de datos de manera eficiente.</p>
+
+            <h5>3.2.1 Conectar al servidor</h5>
+            <p>Para conectar al servidor SQL Server:</p>
+            <ul>
+                <li>Abra SQL Server Management Studio.</li>
+                <li>En la ventana de inicio de sesión, seleccione:
+                    <ul>
+                        <li><strong>Tipo de servidor</strong>: Base de datos.</li>
+                        <li><strong>Nombre del servidor</strong>: Introduzca el nombre de la instancia.</li>
+                        <li><strong>Modo de autenticación</strong>: Seleccione “Autenticación de Windows” o “Autenticación de SQL Server”.</li>
+                    </ul>
+                </li>
+                <li>Haga clic en <strong>Conectar</strong>.</li>
+            </ul>
+
+            <h5>3.2.2 Nombre del Servidor</h5>
+            <p>El nombre del servidor puede variar dependiendo de su configuración:</p>
+            <ul>
+                <li>Para una instancia por defecto: <code>NombreDelEquipo</code> o <code>localhost</code>.</li>
+                <li>Para una instancia con nombre: <code>NombreDelEquipo\NombreInstancia</code>.</li>
+            </ul>
+
+            <h4>3.3 Los paneles de Management Studio</h4>
+            <p>SSMS contiene varios paneles que facilitan la gestión de bases de datos. A continuación, se describen los más importantes:</p>
+
+            <h5>3.3.1 Servidores Registrados</h5>
+            <p>Permite guardar las conexiones a diferentes servidores para acceder rápidamente a ellos sin necesidad de introducir nuevamente las credenciales.</p>
+
+            <h5>3.3.2 Explorador de Objetos</h5>
+            <p>El Explorador de Objetos es el panel principal para navegar por las bases de datos, tablas, procedimientos almacenados y otros objetos del servidor.</p>
+
+            <h5>3.3.3 Explorador de Soluciones</h5>
+            <p>Proporciona una vista jerárquica de los proyectos que se crean dentro de SSMS, lo que facilita el manejo de scripts y códigos.</p>
+
+            <h5>3.3.4 Mejoras en la interfaz de Usuario</h5>
+            <p>SQL Server 2008 introdujo una interfaz más intuitiva, con personalización de paneles, atajos y opciones avanzadas de navegación.</p>
+
+            <h5>3.3.5 Explorador de Plantillas</h5>
+            <p>Contiene ejemplos predefinidos de consultas y configuraciones que ayudan a agilizar tareas comunes.</p>
+
+            <h4>3.4 Paneles Clave</h4>
+
+            <h5>3.4.1 El panel de consultas</h5>
+            <p>En este panel, los desarrolladores pueden escribir y ejecutar comandos SQL. Incluye herramientas de validación de sintaxis, autocompletado y análisis de rendimiento.</p>
+
+            <h5>3.4.2 El panel de Resultados</h5>
+            <p>Muestra los datos obtenidos tras ejecutar consultas. Puede representar información en formato tabular, texto o mensajes de error.</p>
+
+            <h5>3.4.3 El Monitor de Actividad</h5>
+            <p>Permite supervisar el rendimiento del servidor en tiempo real, mostrando procesos activos, uso de CPU y bloqueos de transacciones.</p>
+
+            <h4>3.5 SQL Server Configuration Manager</h4>
+            <p>Es una herramienta separada que permite gestionar configuraciones relacionadas con SQL Server.</p>
+
+            <h5>3.5.1 Los Protocolos</h5>
+            <p>SQL Server admite varios protocolos de comunicación:</p>
+            <ul>
+                <li><strong>Canalizaciones con Nombre</strong>: Protocolo para conexiones locales.</li>
+                <li><strong>TCP/IP</strong>: Protocolo principal para conexiones remotas.</li>
+                <li><strong>Memoria Compartida</strong>: Utilizado por aplicaciones en el mismo servidor.</li>
+            </ul>
+
+            <h5>3.5.2 El Cliente Nativo de SQL</h5>
+            <p>Es un conjunto de componentes que permite a las aplicaciones comunicarse con SQL Server. Ofrece compatibilidad para versiones anteriores y nuevas funcionalidades.</p>
+
+            <h4>3.6 Los Servicios de SQL Server 2008</h4>
+            <p>SQL Server incluye varios servicios esenciales:</p>
+            <ul>
+                <li><strong>Motor de base de datos</strong>: El servicio principal para almacenar y gestionar datos.</li>
+                <li><strong>SQL Server Agent</strong>: Programa tareas automatizadas como respaldos y mantenimientos.</li>
+                <li><strong>Reporting Services</strong>: Crea informes interactivos.</li>
+                <li><strong>Analysis Services</strong>: Procesa análisis OLAP y modelos de datos.</li>
+            </ul>
+
+            <h5>3.6.1 Parámetros de inicio del servicio de SQL Server</h5>
+            <p>Los parámetros permiten personalizar el comportamiento del servidor durante su arranque. Ejemplo:</p>
+            <ul>
+                <li><code>-m</code>: Inicia en modo de usuario único.</li>
+                <li><code>-f</code>: Modo de configuración mínima.</li>
+            </ul>
+
+            <h5>3.6.2 Cuentas de ejecución</h5>
+            <p>Cada servicio de SQL Server requiere una cuenta de usuario asignada. Estas cuentas deben ser restringidas para minimizar riesgos de seguridad.</p>
+        </div>
+
+
+    
+        <hr class="section-divider">
+    
+        <!-- Sección 4: Configuración de la Seguridad en SQL Server -->
+        <div id="seguridad-sql" class="contenedor-seccion">
+            <h3>4. Configuración de la Seguridad en SQL Server</h3>
+
+            <h4>4.1 Herramienta de Configuración de Superficie</h4>
+            <p>SQL Server 2008 introduce la Herramienta de Configuración de Superficie, que permite a los administradores controlar qué características de SQL Server están habilitadas o deshabilitadas en una instalación. Esta herramienta es crucial para la seguridad porque minimiza la exposición de los servicios innecesarios, reduciendo el riesgo de accesos no autorizados. A través de esta herramienta, es posible administrar las configuraciones de red, las conexiones remotas, y las opciones de características de SQL Server, lo que facilita la personalización de la instalación de acuerdo con las necesidades de seguridad específicas.</p>
+
+            <h4>4.2 Configuración de Servicios y Conexiones</h4>
+            <p>La configuración de los servicios y las conexiones de SQL Server es un aspecto fundamental para mantener el sistema seguro. Algunos aspectos clave incluyen:</p>
+            <ul>
+                <li><strong>Conexiones Remotas:</strong> SQL Server 2008 permite habilitar o deshabilitar las conexiones remotas. Si no es necesario acceder al servidor de forma remota, es recomendable deshabilitar esta opción para evitar accesos no autorizados desde fuera de la red interna.</li>
+                <li><strong>Protocolos de Red:</strong> Los protocolos como TCP/IP y Named Pipes permiten la comunicación entre SQL Server y otras aplicaciones. Es esencial habilitar solo aquellos protocolos que sean estrictamente necesarios para la operación, minimizando la superficie de ataque.</li>
+            </ul>
+
+            <h4>4.3 Consultas Ad Hoc Remotas</h4>
+            <p>SQL Server 2008 también permite habilitar las consultas ad hoc remotas, que son aquellas consultas SQL que se pueden ejecutar sin necesidad de estar predefinidas. Sin embargo, esta funcionalidad puede ser un riesgo de seguridad, ya que podría permitir a usuarios no autorizados ejecutar consultas maliciosas. Por ello, debe habilitarse únicamente cuando sea absolutamente necesario.</p>
+
+            <h4>4.4 Integración CLR</h4>
+            <p>La Integración CLR permite ejecutar código escrito en .NET dentro de SQL Server, lo que abre la puerta a funcionalidades adicionales. No obstante, debido a los riesgos asociados a la ejecución de código externo, se recomienda habilitar esta funcionalidad solo cuando sea indispensable y asegurarse de que el código que se ejecute sea seguro y revisado.</p>
+
+            <h4>4.5 Conexión Dedicada del Administrador (DAC)</h4>
+            <p>La Conexión Dedicada del Administrador (DAC) es una característica que permite a los administradores conectarse a SQL Server incluso cuando el servidor está bajo una carga elevada o experimenta problemas de conectividad. Debido a que proporciona acceso completo al servidor, se debe restringir el uso de esta característica a los administradores y debe configurarse adecuadamente para evitar abusos.</p>
+
+            <h4>4.6 Correo Electrónico de Base de Datos y SQL Mail</h4>
+            <p>SQL Server 2008 permite configurar el correo electrónico de base de datos y el servicio de SQL Mail para enviar notificaciones y alertas desde el servidor de bases de datos. Aunque esta funcionalidad es útil para administradores, también debe ser configurada con precaución, ya que puede ser un punto de acceso para la ejecución de comandos no deseados si no se asegura correctamente.</p>
+
+            <h4>4.7 Servicios Web XML Nativos</h4>
+            <p>Los Servicios Web XML permiten que SQL Server interactúe con aplicaciones y servicios web mediante XML. Estos servicios pueden exponer datos sensibles si no se configuran correctamente. Se recomienda habilitar estos servicios solo cuando sean necesarios y utilizar mecanismos de autenticación seguros.</p>
+
+            <h4>4.8 Automatización OLE</h4>
+            <p>La Automatización OLE permite a SQL Server interactuar con otras aplicaciones mediante objetos OLE (Object Linking and Embedding). Aunque esta funcionalidad es útil en determinados contextos, su uso debe restringirse porque podría permitir la ejecución de programas maliciosos si no se gestiona de manera adecuada.</p>
+
+            <h4>4.9 Ayudante de Web</h4>
+            <p>El Ayudante de Web de SQL Server facilita la configuración de los servicios web. Es una herramienta útil, pero debe usarse con precaución. Una configuración incorrecta podría exponer servicios internos a atacantes, por lo que es fundamental revisar las configuraciones y permisos asociados a los servicios web antes de habilitarlos.</p>
+
+            <h4>4.10 Xp_cmdshell</h4>
+            <p>La característica xp_cmdshell permite ejecutar comandos del sistema operativo directamente desde SQL Server. Aunque puede ser útil en ciertas circunstancias, esta opción representa un riesgo importante de seguridad. Se recomienda deshabilitar xp_cmdshell a menos que sea absolutamente necesario, ya que puede ser utilizada por atacantes para ejecutar comandos no autorizados en el servidor.</p>
+
+            <h4>4.11 Configuración de las Entidades de Seguridad</h4>
+            <p>SQL Server 2008 utiliza varias entidades de seguridad para controlar el acceso a los datos. Las principales entidades de seguridad son:</p>
+            <ul>
+                <li><strong>Entidades de Seguridad de Windows:</strong> SQL Server puede autenticar a los usuarios utilizando las cuentas y grupos de Windows. La autenticación de Windows es más segura que la autenticación de SQL Server, ya que se integra con las políticas de seguridad de Windows.</li>
+                <li><strong>Entidades de Seguridad de SQL Server:</strong> SQL Server también permite la autenticación de usuarios mediante cuentas específicas de SQL Server. Esta opción, aunque flexible, es más susceptible a ataques si no se gestiona adecuadamente.</li>
+                <li><strong>Entidades de Seguridad de Base de Datos:</strong> Dentro de una base de datos, los usuarios y roles determinan el acceso a los objetos. Los roles pueden ser configurados para otorgar permisos a grupos de usuarios, facilitando la gestión de la seguridad.</li>
+            </ul>
+
+            <h4>4.12 Propiedad de los Objetos</h4>
+            <p>La propiedad de los objetos dentro de SQL Server es esencial para la seguridad. Solo los propietarios de los objetos (como tablas, vistas, procedimientos almacenados) tienen permisos para modificarlos o eliminarlos. Se recomienda tener un control riguroso sobre la propiedad de los objetos y limitar los permisos de escritura a los usuarios que realmente los necesiten.</p>
+
+            <h4>4.13 Suplantación (Impersonation)</h4>
+            <p>La suplantación permite que un usuario ejecute acciones en nombre de otro usuario. Aunque es útil en algunos escenarios de administración, la suplantación debe ser configurada cuidadosamente para evitar que usuarios no autorizados asuman privilegios elevados. Solo los administradores deben poder habilitar la suplantación.</p>
+
+            <h4>4.14 Asegurables</h4>
+            <p>Los objetos de seguridad en SQL Server 2008 pueden clasificarse en diferentes niveles de seguridad, conocidos como asegurables. Estos niveles incluyen:</p>
+            <ul>
+                <li><strong>Nivel de Servidor:</strong> Define los permisos y la configuración de seguridad a nivel de servidor.</li>
+                <li><strong>Nivel de Base de Datos:</strong> Se refiere a los permisos y configuraciones de seguridad dentro de una base de datos específica.</li>
+                <li><strong>Nivel de Esquema:</strong> Los esquemas son contenedores dentro de las bases de datos. La seguridad a nivel de esquema permite controlar el acceso a los objetos dentro de ese esquema.</li>
+            </ul>
+
+            <h4>4.15 Encriptación</h4>
+            <p>La encriptación es una herramienta fundamental para proteger los datos sensibles. SQL Server 2008 ofrece varias formas de encriptación, como:</p>
+            <ul>
+                <li><strong>Encriptación por Contraseña:</strong> Utiliza una clave secreta (contraseña) para encriptar y desencriptar los datos.</li>
+                <li><strong>Encriptación por Clave Simétrica:</strong> Utiliza una sola clave tanto para la encriptación como para la desencriptación.</li>
+                <li><strong>Encriptación por Clave Asimétrica:</strong> Utiliza un par de claves, una pública y una privada, para encriptar y desencriptar los datos.</li>
+                <li><strong>Encriptación por Certificados:</strong> Usa certificados digitales para asegurar la transmisión y almacenamiento de datos.</li>
+            </ul>
+
+            <h4>4.16 Jerarquía de Encriptación en SQL Server 2008</h4>
+            <p>La jerarquía de encriptación en SQL Server 2008 permite aplicar diferentes métodos de encriptación en varios niveles del sistema. Esto asegura que los datos estén protegidos tanto en reposo como durante la transmisión.</p>
+        </div>
+
+    
+        <hr class="section-divider">
+    
+        <!-- Sección 5: Configuración de Servidores Vinculados -->
+        <div id="servidores-vinculados" class="contenedor-seccion">
+            <h3>5. Configuración de Servidores Vinculados</h3>
+            <h4>Subtítulo 5.1</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ac nisi vel urna fermentum dapibus et non justo.</p>
+            <h4>Subtítulo 5.2</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ac nisi vel urna fermentum dapibus et non justo.</p>
+        </div>
+    
+        <hr class="section-divider">
+    
+        <!-- Sección 6: Analizador de SQL Server -->
+        <div id="analizador-sql" class="contenedor-seccion">
+            <h3>6. Analizador de SQL Server</h3>
+            <h4>Subtítulo 6.1</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam erat volutpat. Morbi aliquet dolor ut lorem tincidunt maximus.</p>
+            <h4>Subtítulo 6.2</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam erat volutpat. Morbi aliquet dolor ut lorem tincidunt maximus.</p>
+        </div>
+    
+        <hr class="section-divider">
+    
+        <!-- Sección 7: Asistente para la optimización del motor de bases de datos -->
+        <div id="optimizacion-motor" class="contenedor-seccion">
+            <h3>7. Asistente para la optimización del motor de bases de datos</h3>
+            <h4>Subtítulo 7.1</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vulputate, sapien ut fermentum tristique, lectus ligula condimentum lectus.</p>
+            <h4>Subtítulo 7.2</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vulputate, sapien ut fermentum tristique, lectus ligula condimentum lectus.</p>
+        </div>
+    
+        <hr class="section-divider">
+    
+        <!-- Sección 8: Resolución de bloqueos e interbloqueos -->
+        <div id="bloqueos" class="contenedor-seccion">
+            <h3>8. Resolución de bloqueos e interbloqueos</h3>
+            <h4>Subtítulo 8.1</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec leo ut orci blandit vestibulum. Nulla tincidunt risus ut justo aliquam tincidunt.</p>
+            <h4>Subtítulo 8.2</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec leo ut orci blandit vestibulum. Nulla tincidunt risus ut justo aliquam tincidunt.</p>
+        </div>
+    
+        <!-- Continúa con las demás secciones de la misma manera... -->
+    </main>        
+
+    <footer>
+        <div class="contenedor-footer-redes">
+            <div class="footer-info">
+                <p>&copy; 2024 Mosquera Zevallos Valerio</p>
+                <p>Todos los derechos reservados</p>
+                <p>Elaboración propia</p>
+            </div>
+            <div class="footer-contact">
+                <p>Estudiante de la Universidad Peruana Los Andes</p>
+                <p>Correo institucional: <a href="mailto:r03398d@ms.upla.edu.pe">r03398d@ms.upla.edu.pe</a></p>
+                <p>Correo personal: <a href="mailto:mosqueravalerio10@gmail.com">mosqueravalerio10@gmail.com</a></p>
+            </div>
+            <div class="footer-socials">
+                <a href="https://linkedin.com/in/valerio-mosquera-4b7884329" target="_blank" rel="noopener noreferrer" class="text-white">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="https://github.com/Vaalerio" target="_blank" rel="noopener noreferrer" class="text-white">
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <button id="btn-top" onclick="topFunction()">Ir arriba</button>
+
+    <script src="../js/main.js"></script>
+    <script>
+        var mybutton = document.getElementById("btn-top");
+
+        window.onscroll = function () {
+            // Mostrar el botón cuando el usuario haya desplazado hacia abajo más de 100px
+            if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+                mybutton.style.display = "block";  // Mostrar el botón
+            } else {
+                mybutton.style.display = "none";   // Ocultar el botón
+            }
+        };
+
+        function topFunction() {
+            // Desplazar la página hacia arriba cuando el usuario haga clic en el botón
+            document.body.scrollTop = 0;  // Para Safari
+            document.documentElement.scrollTop = 0;  // Para Chrome, Firefox, IE y Opera
+        }
+    </script>
+</body>
+</html>
